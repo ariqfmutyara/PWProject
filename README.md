@@ -7,16 +7,17 @@ Developed by :
 
 PENJELASAN
 
-	1. Nama : *
-	2. Penjelasan : Web Review Film - film dengan Synopsis, Trailer, Review, dll
+	1. Nama : VOTART
+	2. Penjelasan : Memberikan award kepada para seniman, dan memperkenalkan karya seni kepada para penikmat seni
 
 FUNGSI
 
-	1. Sebagai Sarana Hiburan
-	2. Untuk melihat Film mana yang bagus untuk ditonton
-	3. Untuk melihan info terbaru tentang Film - film yang hits
+	1. Mewadahi para seniman dalam mepublikasikan karya mereka
+	2. Memberikan apresisasi kepada seniman
+	3. Memperkenalkan karya seni kepada penikmat seni
+	4. Tempat dimana perusahaan mencari Sumber daya manusia
 	
 TARGET PENGGUNA
 
-	1. Seluruh Masyarakat
-	2. Movie Addict
+	1. Penikmat Seni
+	2. Perusahaan - Perusahaan
