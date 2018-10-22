@@ -1,0 +1,87 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Font */
+* {
+    font-family: Arial, Helvetica, sans-serif;  
+}
+.bold {
+    font-weight: bold;
+}
+
+
+/* Colors */
+.bg-red {
+    background: #d32f2f;
+}
+
+.white {
+    color: #fff;
+}
+
+.gray {
+    color: #616161;
+}
+
+/* Alignment, Sizing */
+.center {
+    margin: 0 auto !important;
+}
+
+.vc {
+    display: flex;
+    align-items: center;
+}
+
+.tc {
+    text-align: center;
+}
+
+/* Margin */
+.mt-2 {
+    margin-top: 1rem;  
+}
+
+.mb-2 {
+    margin-bottom: 1rem;
+}
+
+/* Padding */
+.pa-0 {
+    padding: 0;
+}
+
+.pt-1 {
+    padding-top: .5rem;  
+}
+
+.pb-1 {
+    padding-bottom: .5rem;  
+}
+
+.pr-3 {
+    padding-right: 1.5rem
+}
+
+.pl-3 {
+    padding-left: 1.5rem
+}
+
+.pl-0 {
+    padding-left: 0;
+}
+
+/* Components */
+.navbar {
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+.profile-pic {
+    border-radius: 200%;
+    width: 36px;
+    height: 36px;
+}
