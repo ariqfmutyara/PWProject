@@ -18,6 +18,9 @@ ul {
 li {
     float: right;
 }
+li a.register{
+    background-color: blue;
+}
 
 li a, .dropbtn {
     display: inline-block;
@@ -61,9 +64,14 @@ li.dropdown {
 .dropdown:hover .dropdown-content {
     display: block;
 }
+
 div form{
     margin-top: 15px;
     margin-right: 30px;
+    border-radius: 2px;
+}
+div form. #searchbar{
+    border-radius: 10px;
 }
 
 button{
@@ -76,4 +84,35 @@ button{
 input{
     font-family: montserrat;
     width: 250px;
+}
+
+div.content h2{
+    top: 0px;
+    font-family: montserrat;
+    font-size: 40px;
+    margin-left:20px;
+    color: #30bdbe;
+    text-shadow: 2px 2px  #178283;
+    text-align: center; 
+}
+
+
+div.content img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto; 
+    border-radius: 15px;
+    width:700px;
+    height:400px;
+}
+
+ul li.item1{
+    margin-left: auto;
+    margin-right: auto; 
+    margin:100px;
+    list-style: none;
+    position: absolute;
+    width: 1000px;
+    height:200px;
+    background: green;
 }
