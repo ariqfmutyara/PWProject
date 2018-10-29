@@ -12,7 +12,6 @@ ul {
     background-color: #4d4d4d;
     font-family: montserrat;
  
-
 }
 
 li {
@@ -106,13 +105,10 @@ div.content img{
     height:400px;
 }
 
-ul li.item1{
-    margin-left: auto;
-    margin-right: auto; 
-    margin:100px;
+ul li.content{
     list-style: none;
-    position: absolute;
-    width: 1000px;
-    height:200px;
-    background: green;
+    width: 200px;
+    height: 200px;
+    margin: 10px;
+    position: absolute; 
 }
