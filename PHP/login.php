@@ -64,7 +64,7 @@
                         
                         <button type="submit" name="SUBMIT" value="Sign In" style="border-radius: 10px;margin-left: 130px">Login</button>
                         <label style="color: white; font-family: montserrat; display: inline-block;">
-                            <input type="checkbox" checked="checked" name="remember">Remember me
+                            Remember me <input type="checkbox" checked="checked" name="remember">
                         </label>
                     </div>
                     <div class="container">
@@ -72,8 +72,8 @@
                             <br>
                                 <span class="psw" style="font-family: montserrat; text-decoration: none; color:white;margin-left: 330px;">Forgot <a href="#"  style="font-family: montserrat; text-decoration: none;color :white">password?</a></span>
                             </br>
-                     <div class="container">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 0px; margin-top:80px;margin-left: 130px;color: #252525; background-color: grey"; href="register.php">REGISTER</button>
+                     <div class="container" >
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="register" style="border-radius: 0px; margin-top:80px;margin-left: 130px;color: #252525; background-color: grey"; href="register.php">REGISTER</button>
                     </div>
                   </form>
             </div>

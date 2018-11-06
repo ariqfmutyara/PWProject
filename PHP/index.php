@@ -1,25 +1,3 @@
-<?php
-session_start();
-if(!isset($_SESSION['LOGIN'])){
-    header("location:login.php");
-        exit();
-}
-    if(isset($_GET['aksi'])){
-        $aksi = S_GET['aksi'];
-
-        if($aksi == "1" ){
-            if(isset($_SESSION['LOGIN'])){
-                unset($_SESSION['LOGIN']);
-                session_unset();
-                session_destroy();
-                $_SESSION = array();
-                    }
-            header("location: login.php");
-            exit();
-        }
-    }
-    ?>
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -33,7 +11,7 @@ if(!isset($_SESSION['LOGIN'])){
 		    <link rel="stylesheet" href="..\CSS\style_home_basic.css">
 		    <ul>
 		        <li><a href="register.php">REGISTER</a></li>
-		        <li><a href="login.php">LOG IN</a></li>
+		        <li><a href="login.php" name="LOGIN">LOG IN</a></li>
 		        <li class="dropdown">
 		            <a href="javascript:void(0)" class="dropbtn">CATEGORIES</a>
 		            <div class="dropdown-content">
