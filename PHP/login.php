@@ -8,15 +8,15 @@
     require_once ("config.php");
 
     if(isset ($_POST['SUBMIT'])){
-        $id_user = trim($_POST['id_user']);
+        $username_user = trim($_POST['username_user']);
         $pw_user = trim($_POST['pw_user']);
 
-        if($id_user == "" || $pw_user == ""){
+        if($username_user == "" || $pw_user == ""){
             header("location:loginerror.php?e=1");
             exit();
         }
 
-        $sql = mysql_query("SELECT * FROM user WHERE id_user='$id_user' and pw_user='$pw_user'", $koneksi);
+        $sql = mysql_query("SELECT * FROM users WHERE username_user='$username_user' and pw_user='$pw_user'", $koneksi);
 
         if(mysql_num_rows($sql) != 0){
             $_SESSION['LOGIN'] = 1;
@@ -57,7 +57,7 @@
                     </div>
                     <div class="container">
                         <label for="USERID" style="color: white; font-family: montserrat; font-size: 20px"><b>Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="id_user" required>
+                        <input type="text" placeholder="Enter Username" name="username_user" required>
 
                         <label for="PASSWORD" style="color: white; font-family: montserrat; font-size: 20px"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="pw_user" required>

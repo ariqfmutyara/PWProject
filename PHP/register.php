@@ -1,3 +1,37 @@
+<?php
+
+require_once("config.php");
+
+if(isset($_POST['register'])){
+
+    // filter
+    $name_user = filter_input(INPUT_POST, 'name_user', FILTER_SANITIZE_STRING);
+    $username_user = filter_input(INPUT_POST, 'username_user', FILTER_SANITIZE_STRING);
+    // encrypt
+    $pw_user = password_hash($_POST["pw_user"], PASSWORD_DEFAULT);
+    $email_user = filter_input(INPUT_POST, 'email_user', FILTER_VALIDATE_EMAIL);
+
+
+    // prepare query
+    $sql = "INSERT INTO users (name_user, username_user, email_user, pw_user) 
+            VALUES (:name, :username, :email, :password)";
+    $stmt = $db->prepare($sql);
+
+    // bind parameter to query
+    $params = array(
+        ":name" => $name,
+        ":username" => $username,
+        ":password" => $password,
+        ":email" => $email
+    );
+
+    // execute
+    $saved = $stmt->execute($params);
+    
+    if($saved) header("Location: login.php");
+}
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
