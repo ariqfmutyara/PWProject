@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 31, 2018 at 02:44 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 5.6.38
+-- Generation Time: Nov 06, 2018 at 03:06 PM
+-- Server version: 10.1.35-MariaDB
+-- PHP Version: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -36,20 +36,16 @@ CREATE TABLE `admin` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `user`
+-- Table structure for table `users`
 --
 
-CREATE TABLE `user` (
-  `id_user` varchar(50) NOT NULL,
-  `pw_user` varchar(50) NOT NULL
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `username_user` varchar(255) NOT NULL,
+  `email_user` varchar(255) NOT NULL,
+  `pw_user` varchar(255) NOT NULL,
+  `name_user` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
-
---
--- Dumping data for table `user`
---
-
-INSERT INTO `user` (`id_user`, `pw_user`) VALUES
-('user1', '123456');
 
 -- --------------------------------------------------------
 
@@ -67,16 +63,27 @@ CREATE TABLE `voters` (
 --
 
 --
--- Indexes for table `user`
+-- Indexes for table `users`
 --
-ALTER TABLE `user`
-  ADD PRIMARY KEY (`id_user`);
+ALTER TABLE `users`
+  ADD PRIMARY KEY (`id`),
+  ADD UNIQUE KEY `username` (`username_user`);
 
 --
 -- Indexes for table `voters`
 --
 ALTER TABLE `voters`
   ADD PRIMARY KEY (`id_voters`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
