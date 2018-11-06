@@ -73,7 +73,7 @@
                                 <span class="psw" style="font-family: montserrat; text-decoration: none; color:white;margin-left: 330px;">Forgot <a href="#"  style="font-family: montserrat; text-decoration: none;color :white">password?</a></span>
                             </br>
                      <div class="container">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 0px; margin-top:80px;margin-left: 130px;color: #252525; background-color: grey" href="register.php">REGISTER</button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 0px; margin-top:80px;margin-left: 130px;color: #252525; background-color: grey"; href="register.php">REGISTER</button>
                     </div>
                   </form>
             </div>
