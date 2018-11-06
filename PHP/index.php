@@ -32,8 +32,8 @@ if(!isset($_SESSION['LOGIN'])){
 		<div class="header">
 		    <link rel="stylesheet" href="..\CSS\style_home_basic.css">
 		    <ul>
-		        <li><a href="#register">REGISTER</a></li>
-		        <li><a href="login_user.php">LOG IN</a></li>
+		        <li><a href="register.php">REGISTER</a></li>
+		        <li><a href="login.php">LOG IN</a></li>
 		        <li class="dropdown">
 		            <a href="javascript:void(0)" class="dropbtn">CATEGORIES</a>
 		            <div class="dropdown-content">
@@ -60,7 +60,7 @@ if(!isset($_SESSION['LOGIN'])){
 		<div class="hero"></div>
 		<div class="content">
 			<h2>PHOTO OF THE DAY</h2>
-			<img src="542431-636251707678601607-16x9.jpg" alt="pottd">
+			<img src="..\foto\542431-636251707678601607-16x9.jpg" alt="pottd">
 			<div class=square1>
 				<div class="square2">
 					<div class="explore">Explore.</div>			
@@ -68,6 +68,6 @@ if(!isset($_SESSION['LOGIN'])){
 			</div>
 		</div>
 	</div>
-	<p><a href = "home.php?aksi=1">LOGOUT</a></p>
+	<p><a href = "index.php?aksi=1">LOGOUT</a></p>
 </body>
 </html>
