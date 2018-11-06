@@ -30,7 +30,7 @@ if(!isset($_SESSION['LOGIN'])){
 <body>
 	<div class="container">
 		<div class="header">
-		    <link rel="stylesheet" href="style_home_basic.css">
+		    <link rel="stylesheet" href="..\CSS\style_home_basic.css">
 		    <ul>
 		        <li><a href="#register">REGISTER</a></li>
 		        <li><a href="login_user.php">LOG IN</a></li>
