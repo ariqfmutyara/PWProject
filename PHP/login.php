@@ -50,7 +50,7 @@
         <div class="hero"></div>
         <div class="content">
             <div class=square1>
-               <form class="modal-content animate" action="/action_page.php">
+               <form class="modal-content animate" action="/action_page.php" method="POST">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span><a href=""></a>
                         <h1 style="font-family: montserrat;font-size: 40px;text-align: center; color:  #30bdbe;">LOG IN MENU</h1>
@@ -68,12 +68,12 @@
                         </label>
                     </div>
                     <div class="container">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 10px; margin-left: 130px;" href="Home_basic.html">Cancel</button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 10px; margin-left: 130px;" href="index.php">Cancel</button>
                             <br>
                                 <span class="psw" style="font-family: montserrat; text-decoration: none; color:white;margin-left: 330px;">Forgot <a href="#"  style="font-family: montserrat; text-decoration: none;color :white">password?</a></span>
                             </br>
                      <div class="container">
-                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 0px; margin-top:80px;margin-left: 130px;color: #252525; background-color: grey">REGISTER</button>
+                        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 0px; margin-top:80px;margin-left: 130px;color: #252525; background-color: grey" href="register.php">REGISTER</button>
                     </div>
                   </form>
             </div>
