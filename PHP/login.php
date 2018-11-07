@@ -50,7 +50,7 @@ if(isset($_POST['SUBMIT'])){
         <div class="hero"></div>
         <div class="content">
             <div class=square1>
-               <form class="modal-content animate" action="/action_page.php" method="POST">
+               <form class="modal-content animate" action="index.php" method="POST">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span><a href=""></a>
                         <h1 style="font-family: montserrat;font-size: 40px;text-align: center; color:  #30bdbe;">LOG IN MENU</h1>

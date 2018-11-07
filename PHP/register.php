@@ -48,7 +48,7 @@ if(isset($_POST['register'])){
         <div class="hero"></div>
         <div class="content">
             <div class=square1>
-               <form class="modal-content animate" action="/action_page.php">
+               <form class="modal-content animate" action="login.php">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span><a href=""></a>
                         <h1 style="font-family: montserrat;font-size: 40px;text-align: center; color:  #30bdbe;">CREATE AN ACCOUNT</h1>
