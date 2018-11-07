@@ -1,37 +1,37 @@
-<?php
-    session_start();
-    if(isset($_SESSION['LOGIN'])){
-        header("location:index.php");
-            exit();
-    }
+<?php 
 
-    require_once ("config.php");
+require_once("config.php");
 
-    if(isset ($_POST['SUBMIT'])){
-        $username_user = trim($_POST['username_user']);
-        $pw_user = trim($_POST['pw_user']);
+if(isset($_POST['SUBMIT'])){
 
-        if($username_user == "" || $pw_user == ""){
-            header("location:loginerror.php?e=1");
-            exit();
-        }
+    $username_user = filter_input(INPUT_POST, 'username_user', FILTER_SANITIZE_STRING);
+    $pw_user = filter_input(INPUT_POST, 'pw_user', FILTER_SANITIZE_STRING);
 
-        $sql = mysql_query("SELECT * FROM users WHERE username_user='$username_user' and pw_user='$pw_user'", $koneksi);
+    $sql = "SELECT * FROM users WHERE username_user=:username_user OR email_user=:email_user";
+    $stmt = $db->prepare($sql);
+    
+    // bind parameter ke query
+    $params = array(
+        ":username_user" => $username_user,
+        ":email_user" => $username_user
+    );
 
-        if(mysql_num_rows($sql) != 0){
-            $_SESSION['LOGIN'] = 1;
+    $stmt->execute($params);
+
+    $user = $stmt->fetch(PDO::FETCH_ASSOC);
+
+    // jika user terdaftar
+    if($user){
+        // verifikasi password
+        if(password_verify($pw_user, $user["pw_user"])){
+            // buat Session
             session_start();
-
-            header("location:index.php");
-            exit();
-        }
-        else{
-            header ("location:loginerror.php?e=2");
-            exit();
+            $_SESSION["user"] = $user;
+            // login sukses, alihkan ke halaman timeline
+            header("Location: index.php");
         }
     }
-
-
+}
 ?>
 
 <!DOCTYPE html>
