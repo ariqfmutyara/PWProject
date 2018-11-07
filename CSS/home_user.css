@@ -3,7 +3,6 @@ body{
     padding: 0;
     background-color: #f5f6ec;
     font-size: 12px;
-    
 }
 
 ul {
@@ -90,38 +89,25 @@ div.content{
 }
 
 
-div.content h1{
-    top: 0px;
-    font-family: montserrat;
-    font-size: 100px;
-    color: #30bdbe;
-    text-shadow: 2px 2px  #178283;
-    text-align: center;
-    margin-top:-10px;
-}
-
-
-
-
-
 div.content h2{
     top: 0px;
     font-family: montserrat;
     font-size: 50px;
+    margin-left:20px;
     color: #30bdbe;
     text-shadow: 2px 2px  #178283;
-    text-align: center;
+    text-align: center; 
 }
 
 @keyframes slider{
     0%{
-        left: -1%;
+        left: -10%;
     }
     33%{
-        left: -103.5%;
+        left: -109.5%;
     }
     66%{
-        left: -207%;
+        left: -210%;
     }
     100%{
         left: -310%;
@@ -130,26 +116,20 @@ div.content h2{
 
 #slider {
     overflow: hidden;
-    width: 591px;
-    height: 400px;
-    margin-right: auto;
-    margin-left: auto;
-}
-
-#slider figure {
-    margin-left: -20px;
-    margin-top: 10px;
+    width: 620px;
+    height: 500px;
 }
 
 #slider figure img{
-    margin-left:20px;
+    margin: 16px;
 }
 
 #slider figure{
     position: relative;
     width: 700%;
     height: 500%
-    margin-right: 10px;
+    margin: 0;
+    left: 0;
     font-size: 0;
     animation: 8s slider infinite;
     animation-delay: 2s;
@@ -205,5 +185,4 @@ div .square3{
     width: 50%;
     height: 50%;
 }
-
 
