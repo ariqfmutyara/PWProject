@@ -1,9 +1,10 @@
 body{
-    margin:0px;
-    padding: 0px;
+    margin:0;
+    padding: 0;
+    background-color: #f5f6ec;
     font-size: 12px;
-    background-color: #f5f6ec; 
 }
+
 ul {
     list-style-type: none;
     margin: 0;
@@ -78,44 +79,73 @@ input{
     width: 250px;
 }
 
+div.content{
+    width: 649px;
+    height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+
 div.content h2{
     top: 0px;
     font-family: montserrat;
-    font-size: 40px;
+    font-size: 50px;
     margin-left:20px;
     color: #30bdbe;
     text-shadow: 2px 2px  #178283;
     text-align: center; 
 }
 
-
-div.content img{
-    display: block;
-    margin-left: auto;
-    margin-right: auto; 
-    border-radius: 15px;
-    width:700px;
-    height:400px;
+@keyframes slider{
+    0%{
+        left: -10%;
+    }
+    33%{
+        left: -109.5%;
+    }
+    66%{
+        left: -210%;
+    }
+    100%{
+        left: -310%;
+    }
 }
 
-ul li.content{
-    list-style: none;
-    width: 200px;
-    height: 200px;
-    margin: 10px;
-    position: absolute; 
+#slider {
+    overflow: hidden;
+    width: 620px;
+    height: 500px;
 }
 
+#slider figure img{
+    margin: 16px;
+}
 
-.square1{
+#slider figure{
+    position: relative;
+    width: 700%;
+    height: 500%
+    margin: 0;
+    left: 0;
+    font-size: 0;
+    animation: 8s slider infinite;
+    animation-delay: 2s;
+}
+
+div .square1{
     height: 1200px;
-    width: 800px;
+    width: 900px;
     background-color: white;
-    margin-top: 200px;
-    margin-right: auto;
-    margin-left: auto;
+    margin-top: 150px;
+    margin-right: 200px;
+    margin-left: -125px;
+    margin-bottom: 60px;
     border-radius: 15px 15px 15px 15px;
     box-shadow: 0px 0px 50px #e3e3e3;   
+    overflow: hidden;
 
 }
 
@@ -129,20 +159,30 @@ ul li.content{
     margin-top: 20px;
     border-radius: 5px 5px 5px 5px;   
 }
-.explore{
+div .explore{
     color: #252525; 
     font-family: montserrat;
     text-align: center;
     margin-top: 6px;
+    text-decoration: none;
 }
 
-.square2:hover, .explore:hover{
+div .square2:hover{
     background-color: #4d4d4d;
-    color: white;
+    color: #30bdbe;
 }
+
+div .explore:hover{}
 
 div.square2{
      display: inline-block;
 
+}
+
+
+
+div .square3{
+    width: 50%;
+    height: 50%;
 }
 

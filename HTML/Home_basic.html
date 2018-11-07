@@ -1,8 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>VOTEART</title>
-    <meta charset="utf-8">
+	<title>VOTEART</title>
+	<meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
@@ -22,12 +22,12 @@
 		                <a href="#pop art">Pop Art</a>
 		                <a href="#rvector">Vector</a>
 		                <a href="#abstract">Abstract</a>
-		        <li><a href="#news">EXPLORE</a></li>
+		        <li><a href="#news">HOME</a></li>
 		            <li>
 		            <div class="search-container">
 		                <form action="#searchbar">
-		                    <input type="text" placeholder="Search more Art. . ." name="search">
-		                        <button type="submit">Go!</button>
+		                    <input style="border-radius:5px; border-style: none;height: 20px;margin-left: 10px"type="text" placeholder="Search more Art. . ." name="search">
+		                        <button type="submit" style="border-radius:5px; border-style: none;height: 20px;" >Go!</button>
 		                </form>
 		            </div>  
 		        </li>
@@ -35,17 +35,23 @@
 		        </li>
 		    </ul>
 		</div>
-		<div class="hero"></div>
-		<div class="content">
-			<h2>PHOTO OF THE DAY</h2>
-			<img src="..\foto\542431-636251707678601607-16x9.jpg" alt="pottd">
-			<div class=square1>
-				<div class="square2">
-					<div class="explore">Explore.</div>			
-				</div>
-			</div>
-		</div>
 	</div>
-	<p><a href = "home.php?aksi=1">LOGOUT</a></p>
+	<div class="hero"></div>
+	<div class="content">
+		<h2>PHOTO OF THE DAY</h2>	
+		<div id="slider">
+			<figure>
+				<a href="#"><img src="..\foto\1.jpg"></a>
+				<a href="#"><img src="..\foto\2.jpg"></a>
+				<a href="#"><img src="..\foto\3.jpg"></a>
+				<a href="#"><img src="..\foto\1.jpg"></a>
+				
+			</figure>
+		</div>
+		<div class=square1>
+			<div class="square2">
+				<div class="explore"><a href="#Explore." style="text-decoration: none;font-family: montserrat;color: white;">Explore.</a></div>
+			</div>			
+		
+	</div>
 </body>
-</html>
