@@ -74,7 +74,7 @@ if(isset($_POST['register'])){
                         <br />
 
                         
-                        <button type="submit" style="border-radius: 10px;margin-left: 200px"><a href="index.php" style="text-decoration: none;color:white;">Create Account</a></button>
+                        <button type="submit" name="register" value="create" style="border-radius: 10px;margin-left: 200px; text-decoration: none;color:white;">Create Account</button>
                         <label style="color: white; font-family: montserrat; display: inline-block;">
                         <input type="checkbox" checked="checked" name="remember" style="border-radius: 10px;margin-left: 140px" >Remember me</label>
                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 10px; margin-left: 200px;"><a href="Home_basic.html" style="color:white;text-decoration: none;">Cancel</a></button>
