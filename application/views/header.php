@@ -8,7 +8,7 @@
 <body>
 	<div class="container">
 		<div class="header">
-		    <link rel="stylesheet" href="<?php echo base_url()?>assets/CSS/style_home_basic.css">
+		    <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/style_home_basic.css">
 		    <ul>
 		        <li><a href="<?php echo base_url()?>register">REGISTER</a></li>
 		        <li><a href="<?php echo base_url()?>login">LOG IN</a></li>
@@ -36,5 +36,3 @@
 		    </ul>
 		</div>
 	</div>
-</body>
-</html>
