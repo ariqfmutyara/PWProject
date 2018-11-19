@@ -11,7 +11,12 @@
 		    <link rel="stylesheet" href="<?php echo base_url()?>assets/CSS/style_home_basic.css">
 		    <ul>
 		        <li><a href="<?php echo base_url()?>register">REGISTER</a></li>
-		        <li><a href="<?php echo base_url()?>login">LOG IN</a></li>
+				<li class = "dropdown">
+					<a href="<?php echo base_url()?>login" href="javascript:void(0)" class="dropbtn" >LOG IN</a>
+					<div class="dropdown-content">
+					<a href="#outdoor">as Voters</a>
+		            <a href="#indoor">as Artist</a>
+						
 		        <li class="dropdown">
 		            <a href="javascript:void(0)" class="dropbtn">CATEGORIES</a>
 		            <div class="dropdown-content">
