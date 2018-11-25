@@ -14,7 +14,7 @@
 				<li class = "dropdown">
 					<a href="<?php echo base_url()?>login" href="javascript:void(0)" class="dropbtn" >LOG IN</a>
 					<div class="dropdown-content">
-					<a href="#outdoor">as Voters</a>
+					<a href="#outdoor">as Voterss</a>
 		            <a href="#indoor">as Artist</a>
 						
 		        <li class="dropdown">
