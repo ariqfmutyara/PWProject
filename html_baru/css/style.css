@@ -9,7 +9,7 @@ http://www.tooplate.com/view/2082-pure-mix
 /* Body 
 ------------------------------------- */
 body {
-		background: #fff;
+    background: #fff;
     font-family: 'montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
@@ -35,6 +35,7 @@ h1,h2,h3,h4 {
   font-weight: 400;
   letter-spacing: 0.3rem;
   text-transform: uppercase;
+  text-align: center;
 
 }
 
@@ -204,7 +205,7 @@ nav ul {
 
 nav ul.right {
   float: right;
-  right: 0
+  right: 0;
 }
 
 #nav-menu a {
@@ -369,10 +370,8 @@ ul  {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    overflow: hidden;
     background-color: transparent;
     font-family: montserrat;
-    list-style-type: none;
 
 }
 
@@ -381,42 +380,64 @@ li {
 }
 
 li a, .dropbtn {
-    display: inline-block;
+    display: block;
     color: #252525;
     text-align: center;
     padding: 17px 81px;
     text-decoration: none;
-}
 
-li a:hover, .dropdown:hover .dropbtn {  
-    background-color: #252525 !important; 
-    color: white;
 }
-
-li.dropdown {
-    display: block;
+.dropdown{
+  position: relative;
+  display: inline-block;
 }
 
 .dropdown-content {
-    display: none;
     position: absolute; 
     background-color: #fff;
-    min-width: 215px;
     padding: 3px;
-    z-index: 999;
+    z-index: 1;
+    display: none;
 }
 
+.dropdown-content a:hover {
+  background-color: #000;
+}
+
+
+
+
+li a:hover, .dropdown:hover .dropbtn {  
+    background-color: black ; 
+    color: white;
+}
+
+/*li.dropdown {
+    display: inline-block !important;
+}*/
+
+.dropdown: hover .dropbtn{
+  background-color: blue;
+}
 
 .dropdown-content a {
     color: black;
     padding: 12px 16px;
     text-decoration: none;
     display: block;
-    text-align: center;
 }
 
 
-.dropbtn:hover .dropdown-content{
+/*.dropbtn:hover .dropdown-content{
+  display: block;
+}*/
+
+.dropdown{
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown: hover .dropdown-content{
   display: block;
 }
 
@@ -454,26 +475,19 @@ li.dropdown {
 
 /* header section styles
 /* ========================================== */
-#header {
-  -webkit-background-size: cover;
-  background-size: cover;
-  background-position: center center;
-  text-align: center;
-  padding-top: 130px;
-  padding-bottom: -100px;
-}
+
 
 #header .header-thumb {
   background: white;
   border: 0px solid #ececec;
   border-radius: 10px 10px 0px 0px;
-  padding: 102px 20px 62px 20px;
   margin-top: -120px;
   margin-left: 380px;
   margin-right: 380px;
+  min-height: 420px;
 }
 
-.header-one .header-thumb,
+.header-thumb,
 .header-two .header-thumb,
 .header-three .header-thumb,
 .header-four .header-thumb,
@@ -481,18 +495,15 @@ li.dropdown {
   padding: 32px 20px 32px 20px !important;
 }
 
-.header-one, .header-two,
-.header-three, .header-four,
-.header-five {
-  height: 42vh !important;
-  min-height: 420px;
-  padding-top: 120px !important;
+.header-one{
+  padding: 10px 10px 10px 10px !important;
 }
+
 
 .header-one {
   background-color: #f1f2e9;
-  height: 60vh !important;
-  min-height: 620px;
+  height: 40vh !important;
+  min-height: 465px;
   padding-top: 150px !important;
 }
 .header-two {
@@ -565,19 +576,19 @@ li.dropdown {
 
 @keyframes slider{
     0%{
-        left: -110%;
+        left: -1%;
     }
     25%{
-        left: -110%;
+        left: -99%;
     }
     50%{
-        left: -210%;
+        left: -199%;
     }
     75%{
-        left: -310%;
+        left: -299%;
     }
     100%{
-        left: -410%;
+        left: -400.5%;
     }
 }
 
@@ -594,8 +605,8 @@ li.dropdown {
 
 #slider figure img{
     margin-left:20px;
-    width: 480px;
-    height: 335px;
+    max-width: 480px;
+    min-height: 335px;
 }
 
 #slider figure{
@@ -606,6 +617,7 @@ li.dropdown {
     font-size: 0;
     animation: 10s slider infinite;
     animation-delay: 2s;
+    margin-left: -18px;
 
 }
 
@@ -628,7 +640,7 @@ li.dropdown {
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 2px;
-    padding: 8px 17px;
+     padding: 15px 30px;
     margin-right: 2px;
     margin-left: 2px;
     text-transform: uppercase;
@@ -643,6 +655,8 @@ li.dropdown {
 .filter-wrapper li a:focus {
   background: #111112;
   color: #ffffff;
+  padding: 15px 30px;
+
 }
 
 /*isotope box css*/
@@ -759,7 +773,7 @@ li.dropdown {
 }
 
 .post-image {
-	margin: 25px 0px;
+  margin: 25px 0px;
 }
 
 #single-post .blog-comment,
@@ -858,7 +872,7 @@ li.dropdown {
 }
 
 .contact-submit {
-	width: 50%;
+  width: 50%;
 }
 
 #contact .col-md-4 {
@@ -941,8 +955,9 @@ footer {
   .header-one, .header-two,
   .header-three, .header-four,
   .header-five {
-    min-height: 380px;
-	padding-top: 80px !important;
+  min-height: 10px;
+  max-height: 20px;
+  padding-top: 80px !important;
   }
 
   #about .col-md-4,
@@ -975,7 +990,7 @@ footer {
     padding: 32px 20px 22px 62px;
   }
   .contact-submit {
-	width: 70%;
+  width: 70%;
   }
 
 }
