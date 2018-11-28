@@ -141,23 +141,8 @@ img {
 .nav-container,
 nav {
   overflow: hidden;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
+  /*transition: all 0.3s ease;*/
 }
-
-nav {
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-}
-
-nav a {
-  color: #333333;
-}
-
 .navbar {
   background: transparent;
   height: 87px;
@@ -187,7 +172,7 @@ nav a {
   text-decoration: none;
 }
 
-.navicon {  
+.navicon { 
   position: absolute;
   right: 0;
   display: -webkit-flex;
@@ -199,64 +184,9 @@ nav a {
   padding: 20px 0 0;
 }
 
-nav ul {
-  display: block;
-}
 
-nav ul.right {
-  float: right;
-  right: 0;
-}
 
-#nav-menu a {
-  font-weight: 300;
-  font-size: 26px;
-  color: #ffffff;
-  text-transform: uppercase;
-  letter-spacing: 0.3rem;
-}
 
-#nav-menu li {
-  list-style: none;
-  padding: 6px;
-}
-
-.nav-text-light a {
-  color: #ffffff;
-}
-
-.sticky .nav-text-light a {
-  color: #555555;
-}
-
-.sticky nav.nav-inner .navbar {
-  height: 70px;
-  max-height: 70px;
-  margin: 0;
-  background: #ffffff;
-}
-
-.sticky nav.transparent .navbar {
-  background: transparent;
-}
-
-@media all and (max-width: 990px) {
-  .nav-text-light a {
-    color: #555555;
-  }
-  .nav-inner {
-    background: #ffffff;
-  }
-  .transparent {
-    background: transparent;
-  }
-  .navicon {
-    padding-right: 10px;
-  }
-  nav ul.right {
-  float: left;
-  }
-}
 
 a.icon {
   font-size: 32px;
@@ -368,8 +298,8 @@ a.icon {
 
 ul  {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    margin: 0px;
+    padding: 0px;
     background-color: transparent;
     font-family: montserrat;
 
@@ -381,7 +311,77 @@ li {
 
 li a, .dropbtn {
     display: block;
-    color: #252525;
+    color: #666;
+    text-align: center;
+    padding: 17px 81px;
+    text-decoration: none;
+    background-color: transparent;
+
+}
+
+
+
+.dropbtn {
+    background-color: transparent;
+    color: #666;
+    padding: 17px 81px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content { /*ini dropdown*/
+    display: none;
+    position: absolute;
+    background-color: white;
+    width: 230px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    color: white;
+}
+
+.dropdown-content a {
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover, {
+  background-color: white;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+    
+}
+
+li a:hover, .dropdown:hover .dropbtn {
+    background-color: #666;
+    color: white;
+}
+
+/*
+ul  {
+    list-style-type: none;
+    margin: 0px;
+    padding: 0px;
+    background-color: transparent;
+    font-family: montserrat;
+
+}
+
+li {
+    float: right;
+}
+
+li a, a .dropbtn {
+    display: block;
+    color: #666;
     text-align: center;
     padding: 17px 81px;
     text-decoration: none;
@@ -440,7 +440,7 @@ li a:hover, .dropdown:hover .dropbtn {
 .dropdown: hover .dropdown-content{
   display: block;
 }
-
+*/
 
 .list-menu {
   position: fixed;
@@ -761,19 +761,14 @@ li a:hover, .dropdown:hover .dropbtn {
   margin-top: 22px;
   transition: all 0.4s ease-in-out;
 }
-#blog .blog-thumb .btn:hover {
-  background: #111112;
-  border-color: transparent;
-  color: #ffffff;
-}
 
 #single-post blockquote {
-  margin-top: 32px;
+  margin-top: 320px;
   letter-spacing: 2px;
 }
 
 .post-image {
-  margin: 25px 0px;
+  margin: 100px 100px;
 }
 
 #single-post .blog-comment,
