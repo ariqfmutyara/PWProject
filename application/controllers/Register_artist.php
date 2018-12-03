@@ -1,11 +1,11 @@
 <?php
 defined('BASEPATH') OR exit('No direct script access allowed');
 
-class LoginUser extends CI_Controller {
+class Register_artist extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('login');
+		$this->load->view('register_artist');
 	}
 }
 ?>

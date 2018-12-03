@@ -1,10 +1,4 @@
-/*
 
-Template 2082 Pure Mix
-
-http://www.tooplate.com/view/2082-pure-mix
-
-*/
 
 /* Body 
 ------------------------------------- */
@@ -25,11 +19,6 @@ html,body {
 html {
   font-size: 100%;
 }
-
-
-
-/* Typography
-------------------------------------- */
 
 h1,h2,h3,h4 {
   font-weight: 400;
@@ -91,9 +80,6 @@ img {
   max-width: 100%;
 }
 
-
-/* preloader styles
-/* ========================================== */
 .preloader {
     position: fixed;
     top: 0;
@@ -135,9 +121,6 @@ img {
     opacity: 0; } }
 
 
-
-/* navigation styles
-/* ========================================== */
 .nav-container,
 nav {
   overflow: hidden;
@@ -183,10 +166,6 @@ nav {
   justify-content: flex-end;
   padding: 20px 0 0;
 }
-
-
-
-
 
 a.icon {
   font-size: 32px;
@@ -319,8 +298,6 @@ li a, .dropbtn {
 
 }
 
-
-
 .dropbtn {
     background-color: transparent;
     color: #666;
@@ -361,57 +338,6 @@ li a:hover, .dropdown:hover .dropbtn {
     background-color: #666;
     color: white;
 }
-
-/*
-ul  {
-    list-style-type: none;
-    margin: 0px;
-    padding: 0px;
-    background-color: transparent;
-    font-family: montserrat;
-
-}
-
-li {
-    float: right;
-}
-
-li a, a .dropbtn {
-    display: block;
-    color: #666;
-    text-align: center;
-    padding: 17px 81px;
-    text-decoration: none;
-
-}
-.dropdown{
-  position: relative;
-  display: inline-block;
-}
-
-.dropdown-content {
-    position: absolute; 
-    background-color: #fff;
-    padding: 3px;
-    z-index: 1;
-    display: none;
-}
-
-.dropdown-content a:hover {
-  background-color: #000;
-}
-
-
-
-
-li a:hover, .dropdown:hover .dropbtn {  
-    background-color: black ; 
-    color: white;
-}
-
-/*li.dropdown {
-    display: inline-block !important;
-}*/
 
 .dropdown: hover .dropbtn{
   background-color: white;
@@ -469,9 +395,6 @@ li a:hover, .dropdown:hover .dropbtn {
   color: #fff;
   cursor: pointer;
 }
-
-/* header section styles
-/* ========================================== */
 
 
 #header .header-thumb {
@@ -702,8 +625,6 @@ li a:hover, .dropdown:hover .dropbtn {
   padding-top: 14px;
 }
 
-/* about section styles
-/* ========================================== */
 #about {
   padding-top: 5rem;
   padding-bottom: 8rem;
@@ -723,8 +644,6 @@ li a:hover, .dropdown:hover .dropbtn {
   margin-top: 20px;
 }
 
-/* blog & single post section styles
-/* ========================================== */
 #blog, 
 #single-post {
   padding-top: 4rem;
@@ -806,9 +725,6 @@ li a:hover, .dropdown:hover .dropbtn {
   height: 50px;
 }
 
-
-/* contact section styles
-/* ========================================== */
 #contact {
   padding-top: 5rem;
   padding-bottom: 0rem;
@@ -874,9 +790,6 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 
-
-/* footer section styles
-/* ========================================== */
 footer {
   background: #141414;
   padding-top: 120px;
@@ -917,8 +830,6 @@ footer {
   background: #ffffff;
 }
 
-/* Responsive Mobile styles
-/* ========================================== */
 @media (max-width: 980px) {
 
   .intro-inner {top: 30%;}
@@ -957,5 +868,3 @@ footer {
   }
 
 }
-
-
