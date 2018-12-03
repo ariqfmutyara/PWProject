@@ -536,7 +536,7 @@ li a:hover, .dropdown:hover .dropbtn {
 } 
 
 #portfolio .portfolio-thumb .portfolio-overlay {
-  background: #141414;
+  background: white;
   position: absolute;
   top: 0;
   right: 0;
@@ -550,7 +550,9 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 #portfolio .portfolio-thumb:hover .portfolio-overlay {
-  opacity: 0.9;
+  opacity: 0.6;
+  cursor: pointer;
+
 }
 
 #portfolio .portfolio-thumb .portfolio-overlay .portfolio-item {
@@ -559,17 +561,13 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 #portfolio .portfolio-thumb .portfolio-overlay .fa {
-    background: #f9f9f9;
-    border-radius: 100px;
-    color: #141414;
-    font-size: 1.3rem;
-    display: inline-block;
     width: 3.5rem;
     height: 3.5rem;
     line-height: 3.5rem;
     text-align: center;
     text-decoration: none;
     margin-bottom: 4px;
+
 }
 
 @keyframes slider{
@@ -614,7 +612,7 @@ li a:hover, .dropdown:hover .dropbtn {
     margin-right: 10px;
     font-size: 0;
     animation: 10s slider infinite;
-    animation-delay: 2s;
+    animation-delay: 4s;
     margin-left: -18px;
 
 }
@@ -638,7 +636,7 @@ li a:hover, .dropdown:hover .dropbtn {
     font-size: 13px;
     font-weight: 400;
     letter-spacing: 2px;
-     padding: 15px 30px;
+    padding: 15px 30px;
     margin-right: 2px;
     margin-left: 2px;
     text-transform: uppercase;
@@ -651,9 +649,9 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 .filter-wrapper li a:hover,
 .filter-wrapper li a:focus {
-  background: #111112;
+  background: #666;
   color: #ffffff;
-  padding: 15px 30px;
+  padding: 15px 30px; /*test*/
 
 }
 
