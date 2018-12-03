@@ -58,6 +58,8 @@ $route['login_artist'] = 'Login_artist';
 $route['login_voter'] = 'Register_voter';
 $route['login_artist'] = 'Register_artist';
 
+$route['home_voter'] = 'Home_voter';
+
 $route['register'] = 'Register';
 $route['404_override'] = '';
 $route['translate_uri_dashes'] = FALSE;
