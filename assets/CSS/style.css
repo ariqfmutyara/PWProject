@@ -185,10 +185,6 @@ nav {
   padding: 20px 0 0;
 }
 
-
-
-
-
 a.icon {
   font-size: 32px;
   padding-right: 20px;
@@ -334,6 +330,7 @@ li a, .dropbtn {
 .dropdown {
     position: relative;
     display: inline-block;
+
 }
 
 .dropdown-content { /*ini dropdown*/
@@ -342,9 +339,10 @@ li a, .dropbtn {
     background-color: #ddd;
     width: 196px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+    z-index: 999;
     color: white;
     padding: 1px 1px 1px 1px; 
+    
 }
 
 .dropdown-content a {
@@ -358,10 +356,14 @@ li a, .dropbtn {
     
 }
 
-li a:hover, .dropdown:hover .dropbtn {
+
+li a:hover, .dropdown:hover dropbtn{
     background-color: #666;
     color: white;
 }
+
+
+
 
 /*
 ul  {

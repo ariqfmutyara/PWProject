@@ -1,0 +1,38 @@
+
+img {
+    border: 1px solid #ddd;
+    border-radius: 50px 50px 50px 50px;
+    width: 100px;
+    align: center;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+body{
+    background-color: white;
+}
+
+#header {
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 100px;
+  }
+  
+  #header .header-thumb {
+    background: #e3e3e3;
+    padding: 62px px 62px 20px;
+    width: cover;
+    margin : 0px 0px 0px 350px;
+
+  }
+
+  h3:hover{
+      color: beige;
+  }
+
+ 

@@ -27,7 +27,9 @@
                     <div class="navicon" style="margin-right: 20px;">
                     <div class="menu-container">
                         <ul>
-                            <li><a href="#" style="font-size: 13px;">About Us</a></li>
+                            <li><a class="dropbtn" style="font-size: 13px;" href="<?php echo base_url()?>About_us">About Us</a>
+                                </li>
+
                             <li class="dropdown"  style="font-size: 13px;">
                                 <a class="dropbtn" style="font-size: 13px; padding: 17px 83px;">Login</a>
                                 <div class="dropdown-content">
