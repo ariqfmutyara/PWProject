@@ -14,3 +14,4 @@
 			return $this->db->insert('voters', $data);
 		}
 	}
+?>
