@@ -24,12 +24,12 @@ h3 {
   letter-spacing: 4px;
 }
 
-.header-header{
+.header-awal{
   padding: 10px 10px 10px 10px !important;
 }
 
 
-.header-header{
+.header-awal{
   background-color: #f1f2e9;
   background-image: linear-gradient(to top, #f9f9f9, #e3e3e3);
   height: 40vh !important;
@@ -37,7 +37,8 @@ h3 {
   padding-top: 150px !important;
 }
 
-#header .header-thumb {
+.header-thumb {
+  padding: 32px 20px 32px 20px !important;
   background: white;
   border: 0px solid #ececec;
   border-radius: 10px 10px 0px 0px;
@@ -45,14 +46,6 @@ h3 {
   margin-left: 380px;
   margin-right: 380px;
   min-height: 420px;
-}
-
-.header-thumb,
-.header-two .header-thumb,
-.header-three .header-thumb,
-.header-four .header-thumb,
-.header-five .header-thumb {
-  padding: 32px 20px 32px 20px !important;
 }
 
 .header-one{
@@ -99,7 +92,7 @@ h3 {
     }
 }
 
-#slider {
+.slider {
     overflow: hidden;
     width: 500px;
     height: 335px;
@@ -110,13 +103,13 @@ h3 {
 
 
 
-#slider figure img{
+.slider figure img{
     margin-left:20px;
     max-width: 480px;
     min-height: 335px;
 }
 
-#slider figure{
+.slider figure{
     position: relative;
     width: 700%;
     height: 100%
