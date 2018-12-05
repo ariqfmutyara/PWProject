@@ -11,6 +11,9 @@
 </head>
 
 <body>
+    <?php 
+        if($this->session->flashdata('register_voter'))
+            echo '<p class="alert alert-success">'.$this->session->flashdata('register_voter').'</p>'; ?>
     <div class="preloader">
         <div class="sk-spinner sk-spinner-pulse"></div>
     </div>
