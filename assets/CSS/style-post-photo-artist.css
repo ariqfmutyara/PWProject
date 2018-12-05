@@ -1,0 +1,7 @@
+body{
+	background-color: #f1f2e9;
+  	background-image: linear-gradient(to top, #f9f9f9, #e3e3e3);
+  	height: 40vh !important;
+  	min-height: 465px;
+  	padding-top: 150px !important;
+}

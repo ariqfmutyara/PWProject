@@ -3,6 +3,7 @@
   ================================================== -->
      <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/style-container-awal.css">
      <!-- <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/style.css"> -->
+  <br><br>
   <section>
     <div class="one">
       <div>

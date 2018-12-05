@@ -1,4 +1,4 @@
-/* navigation styles
+/* navigation style untuk nav awal
 /* ========================================== */
 .nav-container,
 nav {
@@ -38,6 +38,7 @@ nav {
   position: absolute;
   right: 0;
   padding: 20px 0 0;
+  margin-right:  20px;
 }
 
 
@@ -80,13 +81,15 @@ li a, .dropbtn {
     cursor: pointer;
     padding: 17px 87px;
     opacity: 0.5;
-    transition: 0.8s;
+    transition: 0.4s;
+    padding: 17px 77px;
 
 }
 
 .dropdown {
     position: relative;
     display: inline-block;
+    font-size: 13px;
 
 }
 
@@ -109,8 +112,8 @@ li a, .dropbtn {
     display: block;
     font-size: 12px;
     text-align: center;
-    transition: 0.8s;
-    
+    transition: 0.4s;
+
 
 }
 
