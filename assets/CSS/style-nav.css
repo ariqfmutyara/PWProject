@@ -67,20 +67,18 @@ li a, .dropbtn {
     text-align: center;
     padding: 17px 70px;
     text-decoration: none;
-    background-color: transparent;
-
 }
 
 
 
 .dropbtn {
-    background-color: transparent;
-    color: black;
+    background-color: #694b89;
+    color: white;
     font-size: 13px;
     border: none;
     cursor: pointer;
     padding: 17px 87px;
-    opacity: 0.5;
+    opacity: 0.6;
     transition: 0.4s;
     padding: 17px 77px;
 
@@ -96,7 +94,7 @@ li a, .dropbtn {
 .dropdown-content { /*ini dropdown*/
     display: none;
     position: absolute;
-    background-color: #ddd;
+    background-color: white;
     min-width: 208px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 999;
@@ -126,7 +124,7 @@ li a, .dropbtn {
 
 
 li a:hover, .dropdown:hover dropbtn{
-    background-color: #694b89;
+    background-color: #694b89; /*dropdown*/
     color: white;
     opacity: 1;
 
