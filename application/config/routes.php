@@ -52,11 +52,11 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 $route['default_controller'] = 'Home/index';
 $rout['(:any)'] = 'Home/index/$1';
 
-$route['login_voter'] = 'Login_voter';
-$route['login_artist'] = 'Login_artist';
+$route['login_voter'] = 'Login/login_voter';
+$route['login_artist'] = 'Login/login_artist';
 
-$route['login_voter'] = 'Register_voter';
-$route['login_artist'] = 'Register_artist';
+$route['register_voter'] = 'Register/register_voter';
+$route['register_artist'] = 'Register/register_artist';
 
 $route['home_voter'] = 'Home_voter';
 $route['home_artist'] = 'Home_artist';

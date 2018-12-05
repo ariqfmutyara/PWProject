@@ -39,8 +39,8 @@
                             <li class="dropdown" style="font-size: 13px;">
                                 <a class="dropbtn" style="font-size: 13px; padding: 17px 77px;">Register</a>
                                 <div class="dropdown-content">
-                                <a href="<?php echo base_url()?>Register_voter" class="dropbtn" >As Voter</a>
-                                <a href="<?php echo base_url()?>Register_artist" class="dropbtn">As Artist</a>
+                                <a href="<?php echo base_url()?>register_voter" class="dropbtn" >As Voter</a>
+                                <a href="<?php echo base_url()?>register_artist" class="dropbtn">As Artist</a>
                                 </div>
                             <li>
                             </li>
