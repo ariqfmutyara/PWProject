@@ -1,19 +1,10 @@
-/*
-
-Template 2082 Pure Mix
-
-http://www.tooplate.com/view/2082-pure-mix
-
-*/
-
-/* Body 
-------------------------------------- */
 body {
     background: #fff;
     font-family: 'montserrat', sans-serif;
     font-style: normal;
     font-weight: 300;
     position: relative;
+    text-decoration: none;
 
 }
 
@@ -25,11 +16,6 @@ html,body {
 html {
   font-size: 100%;
 }
-
-
-
-/* Typography
-------------------------------------- */
 
 h1,h2,h3,h4 {
   font-weight: 400;
@@ -91,51 +77,6 @@ img {
   max-width: 100%;
 }
 
-
-/* preloader styles
-/* ========================================== */
-.preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 99999;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: center;
-    align-items: center;
-    background: none repeat scroll 0 0 #fff;
-}
-
-.sk-spinner-pulse {
-  width: 60px;
-  height: 60px;
-  background-color: #111112;
-  border-radius: 100%;
-  -webkit-animation: sk-pulseScaleOut 1s infinite ease-in-out;
-          animation: sk-pulseScaleOut 1s infinite ease-in-out; }
-
-@-webkit-keyframes sk-pulseScaleOut {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 0; } }
-
-@keyframes sk-pulseScaleOut {
-  0% {
-    -webkit-transform: scale(0);
-            transform: scale(0); }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
-    opacity: 0; } }
-
-
-
 /* navigation styles
 /* ========================================== */
 .nav-container,
@@ -165,133 +106,18 @@ nav {
   letter-spacing: 0.3rem;
   margin-left: 50px;
 }
-.brand a {
+.brand a { /* VOTART di navbar*/
   color: #333;
   font-size: 24px;
   font-weight: 700;
-  opacity: 1;
-  text-decoration: none;
 }
 
 .navicon { 
   position: absolute;
   right: 0;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-justify-content: flex-end;
-  -ms-flex-pack: end;
-  justify-content: flex-end;
   padding: 20px 0 0;
 }
 
-a.icon {
-  font-size: 32px;
-  padding-right: 20px;
-}
-
-.intro-inner {  
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-      -ms-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  width: 100%;
-  text-align: center;
-}
-
-.close {
-  font-family: inherit;
-  font-size: 32px;
-  font-weight: 300;
-  text-shadow: none;
-}
-.close:focus {
-  outline: 0px auto -webkit-focus-ring-color;
-}
-
-.circle {
-  width: 45px;
-  height: 45px;
-  text-align: center;
-  margin: 0 auto;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -40px;
-  margin-left: -40px;
-  border-radius: 50%;
-  transition: all 0.3s ease;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  cursor: pointer;
-  z-index: 99;
-  padding: 4px 0 0;
-}
-
-.circle i {
-  font-size: 36px;
-  color: #111112;
-}
-
-.circle.dark {
-  border-color: #292929;
-}
-
-.circle.dark:before {
-  border-color: transparent transparent transparent #292929;
-}
-
-.circle.large {
-  height: 120px;
-  width: 120px;
-  margin-top: -60px;
-  margin-left: -60px;
-}
-
-.circle.large:before {
-  margin-top: -18px;
-  margin-left: -10px;
-  content: '';
-  width: 0;
-  height: 0;
-  border-style: solid;
-  border-width: 20px 0 20px 31.0px;
-  border-color: transparent transparent transparent #ffffff;
-}
-
-.circle.large.dark:before {
-  border-color: transparent transparent transparent #292929;
-}
-
-.circle.inline {
-  position: relative;
-  top: 0;
-  left: 0;
-  margin-top: 0;
-  margin-left: 0;
-  display: inline-block;
-  z-index: 0;
-}
-
-@media all and (max-width: 767px) {
-  .circle.large {
-    width: 90px;
-    height: 90px;
-    margin-top: -45px;
-  }
-  .circle.large:before {
-    margin-top: -14px;
-    margin-left: -8px;
-    content: '';
-    width: 0;
-    height: 0;
-    border-style: solid;
-    border-width: 15px 0 15px 25.0px;
-    border-color: transparent transparent transparent #fff;
-  }
-}
 
 ul  {
     list-style-type: none;
@@ -308,7 +134,7 @@ li {
 
 li a, .dropbtn {
     display: block;
-    color: #666;
+    color: #666\;
     text-align: center;
     padding: 17px 70px;
     text-decoration: none;
@@ -321,10 +147,11 @@ li a, .dropbtn {
 .dropbtn {
     background-color: transparent;
     color: #666;
-    padding: 17px 71.5px;
-    font-size: 16px;
+    font-size: 13px;
     border: none;
     cursor: pointer;
+    padding: 17px 86px;
+
 }
 
 .dropdown {
@@ -337,18 +164,21 @@ li a, .dropbtn {
     display: none;
     position: absolute;
     background-color: #ddd;
-    width: 196px;
+    width: 207px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 999;
     color: white;
-    padding: 1px 1px 1px 1px; 
-    
+    padding: 1px 1px 1px 1px;
+
 }
 
 .dropdown-content a {
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    font-size: 12px;
+    text-align: center;
+
 }
 
 .dropdown:hover .dropdown-content {
@@ -575,52 +405,7 @@ li a:hover, .dropdown:hover .dropbtn {
     margin-bottom: 4px;
 }
 
-@keyframes slider{
-    0%{
-        left: -1%;
-    }
-    25%{
-        left: -99%;
-    }
-    50%{
-        left: -199%;
-    }
-    75%{
-        left: -299%;
-    }
-    100%{
-        left: -400.5%;
-    }
-}
 
-#slider {
-    overflow: hidden;
-    width: 500px;
-    height: 335px;
-    margin-right: auto;
-    margin-left: auto;
-    padding-bottom: -10px;
-}
-
-
-
-#slider figure img{
-    margin-left:20px;
-    max-width: 480px;
-    min-height: 335px;
-}
-
-#slider figure{
-    position: relative;
-    width: 700%;
-    height: 100%
-    margin-right: 10px;
-    font-size: 0;
-    animation: 10s slider infinite;
-    animation-delay: 2s;
-    margin-left: -18px;
-
-}
 
 /*filter css*/
 .filter-wrapper {

@@ -1,5 +1,5 @@
     
-<!-- Header section isinya slider foto
+<!-- Header - VOTERS section isinya slider foto photo of the day kalo di klik nanti kehubung sm page tampiln foto
 ================================================== -->
 <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/style-header.css">
 <section id="header" class="header-header">
@@ -15,9 +15,7 @@
 			  <a href="#"><img src="<?php echo base_url();?>assets/foto/blog-img9.jpg"></a>
 			  <a href="#"><img src="<?php echo base_url();?>assets/foto/blog-img6.jpg"></a>
               </figure>
-            </div>
-              <h1 class="wow fadeIn" data-wow-delay="1.7s">Find Your Inspiration</h1>
-              <h3 class="wow fadeInUp" data-wow-delay="2.0s">Appreciate the Creation</h3>
+            </div><h1>Photo Of The Day</h1>
           </div>
 			</div>
 
