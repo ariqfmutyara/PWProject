@@ -126,18 +126,19 @@ li a, .dropbtn {
 
 
 li a:hover, .dropdown:hover dropbtn{
-    background-color: #666;
+    background-color: #694b89;
     color: white;
     opacity: 1;
 
 }
 
 
-.dropdown-content a {
-    color: black;
+.dropdown-content a { 
+    color: #967db6; /*warna didalam dropdown*/
     padding: 12px 16px;
     text-decoration: none;
     display: block;
+    background-color :#2b0356;
 }
 
 
@@ -148,4 +149,7 @@ li a:hover, .dropdown:hover dropbtn{
 
 .dropdown: hover .dropdown-content{
   display: block;
+
+
+
 }
