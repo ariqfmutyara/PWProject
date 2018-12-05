@@ -14,8 +14,12 @@
         <div class="hero"></div>
         <div class="content">
             <div class=square1>
+                <?php
+                        $this->load->library('form_validation');
+                        $this->load->helper(array('form'));
+                ?>
                 <?php echo validation_errors(); ?>
-                <?php echo form_open('Register/register_voter'); ?>
+                <?php echo form_open('register_voter'); ?>
                <form class="modal-content animate" action="login_voter" method="post">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span><a href=""></a>

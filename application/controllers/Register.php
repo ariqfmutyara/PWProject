@@ -15,7 +15,7 @@ class Register extends CI_Controller {
 		$data['title'] = 'Register';
 
 		$this->form_validation->set_rules('name_voter', 'Enter fullname', 'required');
-		$this->form_validation->set_rules('username_voter', 'Enter Username', 'required');
+		$this->form_validation->set_rules('username_voter', 'Enter Username', 'required|callback_check_username_exists');
 		$this->form_validation->set_rules('email_voter', 'Enter email', 'required');
 		$this->form_validation->set_rules('pw_voter', 'Enter Password', 'required');
 		$this->form_validation->set_rules('pw_voter1', 'Confirm Password', 'matches[pw_voter]');
@@ -31,6 +31,16 @@ class Register extends CI_Controller {
 			redirect('login_voter');	
 		}
 	}
-	
+
+	public function check_username_exists($username) 
+	{
+		$this->form_validation->set_message('check_username_exists', 'Username is Taken, Try Another!!!');
+
+		if($this->register_model->check_username_exists($username))
+			return true; 
+		else
+			return false;
+	}
+
 }
 ?>

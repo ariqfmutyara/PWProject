@@ -13,5 +13,14 @@
 
 			return $this->db->insert('voters', $data);
 		}
+
+		public function check_username_exists($username) 
+		{
+			$query = $this->db->get_where('voters', array('username_voter => $usename'));
+			if(empty($query->row_array()))
+				return true;
+			else
+				return false;
+		}
 	}
 ?>
