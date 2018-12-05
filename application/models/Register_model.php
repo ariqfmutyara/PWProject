@@ -14,6 +14,17 @@
 			return $this->db->insert('voters', $data);
 		}
 
+		public function register_artist($enc) {
+			$data =  array(
+				'name_user' => $this->input->post('name_user'),
+				'username_user' => $this->input->post('username_user'),
+				'email_user' => $this->input->post('email_user'),
+				'pw_user' => $enc
+			);
+
+			return $this->db->insert('users', $data);
+		}
+
 		public function check_username_exists($username) 
 		{
 			$query = $this->db->get_where('voters', array('username_voter => $usename'));

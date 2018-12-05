@@ -43,7 +43,7 @@
                         <input type="password" placeholder="Confirm Password" name="pw_voter1" required>
                         <br />
 
-                        <button type="submit" style="border-radius: 10px;margin-left: 200px"><a href="index.php" style="text-decoration: none;color:black;">Create Account</a></button>
+                        <button type="submit" style="border-radius: 10px;margin-left: 200px"><a href="login_voter" style="text-decoration: none;color:black;">Create Account</a></button>
                         <label style="color: white; font-family: montserrat; display: inline-block;">
                         <input type="checkbox" checked="checked" name="remember" style="border-radius: 10px;margin-left: 140px" >Remember me</label>
                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 10px; margin-left: 200px;"><a href="Home_basic.html" style="color:black;text-decoration: none;">Cancel</a></button>

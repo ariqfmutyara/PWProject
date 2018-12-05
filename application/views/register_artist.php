@@ -14,11 +14,18 @@
         <div class="hero"></div>
         <div class="content">
             <div class=square1>
-               <form class="modal-content animate" action="controllers/LoginUser.php">
+                <?php
+                        $this->load->library('form_validation');
+                        $this->load->helper(array('form'));
+                ?>
+                <?php echo validation_errors(); ?>
+                <?php echo form_open('register_artist'); ?>
+               <form class="modal-content animate" action="login_artist" method="post">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span><a href=""></a>
                         <h1 style="font-family: montserrat;font-size: 40px;text-align: center; color:  #30bdbe;">CREATE AN ACCOUNT</h1>
                     </div>
+
                     <div class="container">
                         <label for="name_user" style="color: white; font-family: montserrat; font-size: 20px"><b>Full name</b></label>
                         <input type="text" placeholder="Enter fullname" name="name_user" required>
@@ -32,23 +39,17 @@
                         <label for="pw_user" style="color: white; font-family: montserrat; font-size: 20px"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="pw_user" required>
 
-                        <label for="pw_user" style="color: white; font-family: montserrat; font-size: 20px"><b>Confirm Password</b></label>
-                        <input type="password" placeholder="Enter Password" name="pw_user" required>
-
-                        <input type="radio" name="jenis_operator" value="Laki-laki" checked/> 
-                        <input type="radio" name="jenis_operator" value="Perempuan"> 
-                        <br />
-
-                        
-                        <button type="submit" style="border-radius: 10px;margin-left: 200px"><a href="index.php" style="text-decoration: none;color:white;">Create Account</a></button>
+                        <label for="pw_user1" style="color: white; font-family: montserrat; font-size: 20px"><b>Confirm Password</b></label>
+                        <input type="password" placeholder="Enter Password" name="pw_user1" required>
+                       
+                        <button type="submit" style="border-radius: 10px;margin-left: 200px"><a href="login_artist" style="text-decoration: none;color:black;">Create Account</a></button>
                         <label style="color: white; font-family: montserrat; display: inline-block;">
                         <input type="checkbox" checked="checked" name="remember" style="border-radius: 10px;margin-left: 140px" >Remember me</label>
                         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn" style="border-radius: 10px; margin-left: 200px;"><a href="Home_basic.html" style="color:white;text-decoration: none;">Cancel</a></button>
                     </div>
                     <div class="container">
-                            
-                    
                   </form>
+                  <?php echo form_close(); ?>
             </div>
         </div>
     </div>
