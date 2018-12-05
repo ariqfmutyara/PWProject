@@ -28,7 +28,7 @@
                             <a class="dropbtn" style="font-size: 13px; padding: 17px 51px;margin-right: 30px;">Account name</a>
                               <div class="dropdown-content">
                               <a href="#Voter">Profile</a>
-                              <a href="#Artist">Log out</a>
+                              <a href="<?php echo base_url()?>Home" class="dropbtn" >Log out</a>
                           </li>
                         </ul>
                       </div>
