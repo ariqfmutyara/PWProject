@@ -43,7 +43,7 @@
                     </div>
                     <div class="container">
                     <form method ="get" action="<?php echo base_url("/Home")?>">
-                        <button type="submit" class="cancelbtn" style="border-radius: 10px; margin-left: 150px;" href="Header.php">Cancel</button>
+                        <button type="submit" class="cancelbtn" style="border-radius: 10px; margin-left: 150px;">Cancel</button>
                     </form>
                             <br>
                                 <span class="psw" style="font-family: montserrat; text-decoration: none; color:;margin-left: 250px;">Forgot <a href="#"  style="font-family: montserrat; text-decoration: none;color :black">password?</a></span>

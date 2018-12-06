@@ -35,7 +35,7 @@
                         <label for="PASSWORD" style="color: white; font-family: montserrat; font-size: 20px"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="pw_user" required>
                         
-                        <form method ="get" action="<?php echo base_url("/Login")?>">
+                        <form method ="get" action="<?php echo base_url("/Home")?>">
                             <button type="submit" value="Sign In" style="border-radius: 10px;margin-left: 150px">Login</button>
                         </form>
                         <label style="color: black; font-family: montserrat; margin-left: 20px; display: inline-block;">
@@ -52,7 +52,7 @@
                             </br>
                      <div class="container">
                      <form method ="get" action="<?php echo base_url("/register_voter")?>">
-                        <button type="submit" class="cancelbtn" style="border-radius: 0px; margin-top:80px;margin-left: 150px;color: #252525; background-color: #ececec ">REGISTER</button>
+                        <button type="submit" style="border-radius: 0px; margin-top:80px;margin-left: 150px;color: #252525; background-color: #ececec ">REGISTER</button>
                     </div>
                   </form>
             </div>

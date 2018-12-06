@@ -23,8 +23,7 @@ class Register extends CI_Controller {
 		if($this->form_validation->run() == FALSE) 
 			$this->load->view('register_voter', $data);
 		else {
-			$enc = md5($this->input->post('pw_voter'));
-			$this->register_model->register_voter($enc);
+			$enc = $this->input->post('pw_voter');
 
 			$this->session->set_flashdata('register_voter', 'Registered Successfull');
 

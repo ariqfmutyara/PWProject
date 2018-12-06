@@ -2,7 +2,7 @@ body{
     margin:0px;
     padding: 0px;
     font-size: 12px;
-    background-color: #ececec; 
+    background-color: white; 
 }
 
 
@@ -59,7 +59,7 @@ ul li.content{
 .square1{
     height: 800px;
     width: 600px;
-    background-color: #45464b;
+    background-image: linear-gradient(to top right, #d2b48c, #694b89);;
     
     background-position: center center;
     
