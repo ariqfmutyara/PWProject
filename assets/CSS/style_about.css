@@ -1,38 +1,123 @@
-
-img {
-    border: 1px solid #ddd;
-    border-radius: 50px 50px 50px 50px;
-    width: 100px;
-    align: center;
-}
-
-img:hover {
-    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
-}
-
 body{
-    background-color: white;
+	background-color: #1d0829;
+	
+	background-attachment: fixed;
+	font-family: 'montserrat';
 }
 
-#header {
-    -webkit-background-size: cover;
-    background-size: cover;
-    background-position: center center;
-    text-align: center;
-    padding-top: 50px;
-    padding-bottom: 100px;
-  }
-  
-  #header .header-thumb {
-    background: #e3e3e3;
-    padding: 62px px 62px 20px;
-    width: cover;
-    margin : 0px 0px 0px 350px;
+html,body {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+}
 
-  }
+.post-photo{
+	width: 1000px;
+	height: 400px;
+  	background-color: transparent;
+	margin: 0px auto auto auto;
+}
 
-  h3:hover{
-      color: beige;
-  }
+.konten-grid1{
+	display: grid;
+  	grid-template-columns: auto auto auto;
+  	height: 400px;
+}
 
- 
+
+ul{
+  	background-color: transparent;
+
+
+}
+.konten-photo{
+  	font-size: 12px;
+  	text-align: center;
+  	width: 200px;height:200px;
+  	background-color: transparent;
+  	margin: 10px 0px 0px 25px;
+}
+
+
+h2{
+	font-size: 14px;
+	margin-top: 30px;
+	transition: 0.3s;
+	background-color: transparent;
+	width: 180px;
+	padding-left: 10px;
+	padding-right: 20px;
+	text-align: center;
+
+}
+h2:hover{
+	font-size: 17px;
+	margin-top: 30px;
+
+}
+
+
+h1{
+	width: 350px;
+	background-color: transparent;
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#isi{ 
+	height: 20px;
+	list-style-type: none;
+	background-color: transparent;
+	color: white;
+
+}
+
+img{
+	width: 200px;
+	height: 200px;
+	border-radius: 100px 100px 100px 100px;
+	transition: 0.4s;
+	opacity: 0.6;
+	cursor: pointer;
+	-webkit-transition: width 1s, height 1s, -webkit-transform 1s; /* Safari */
+  	transition: width 1s, height 1s, transform 1s;
+
+}
+img:hover{
+	opacity: 1;
+	width: 215px;
+	height: 215px;
+	-webkit-transform: rotate(7deg); /* Safari */
+  	transform: rotate(7deg);
+
+}
+
+/* Konten Luthfi*/ 
+#konten1{
+	background-color: transparent;
+	list-style-type: none;
+	margin-top: 60px;
+
+}
+/*batas luthfi*/
+
+/* Konten Agnes*/ 
+#konten2{
+	background-color: transparent;
+	list-style-type: none;
+	margin-top: 60px;
+}
+
+/*batas Agnes*/
+
+/* Konten Ariq*/ 
+#konten3{
+	background-color: transparent;
+	list-style-type: none;
+	margin-top: 60px;
+}
+
+/*batas Ariq*/

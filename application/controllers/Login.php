@@ -25,9 +25,15 @@ class Login extends CI_Controller {
 			$voter = $this->login_model->login_voter($username, $password);
 
 			if($voter) {
-				die('Login Successfull');
+				$voter_data = array(
+					'voter' => $voter,
+					'username_voter' => $username,
+					'logged_in_voter' => true
+				);
+				$this->session->set_userdata($voter_data);
+
 				$this->session->set_flashdata('login_voter_success', 'You are now Logged in');
-				redirect('home_voter');
+				redirect('home');
 				}
 			else {
 				$this->session->set_flashdata('login_voter_failed', 'Login Failed, Please check your username and password');
@@ -38,7 +44,35 @@ class Login extends CI_Controller {
 
 	public function login_artist() 
 	{
-		$this->load->view('login_artist');
+		$data['title'] = 'Login Voter';
+
+		$this->form_validation->set_rules('username_user', 'Enter Username', 'required');
+		$this->form_validation->set_rules('pw_user', 'Enter Password', 'required');
+
+		if($this->form_validation->run() == FALSE) 
+			$this->load->view('login_artist', $data);
+		else {
+			$username = $this->input->post('username_user');
+			$password = md5($this->input->post('pw_user'));
+
+			$user = $this->login_model->login_user($username, $password);
+
+			if($user) {
+				$user_data = array(
+					'user' => $user,
+					'username_user' => $username,
+					'logged_in_user' => true
+				);
+				$this->session->set_userdata($user_data);
+
+				$this->session->set_flashdata('login_user_success', 'You are now Logged in');
+				redirect('home');
+				}
+			else {
+				$this->session->set_flashdata('login_user_failed', 'Login Failed, Please check your username and password');
+				redirect('login_user');
+			}
+		}
 	}
 }
 

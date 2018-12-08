@@ -14,6 +14,10 @@
     <?php 
         if($this->session->flashdata('register_voter'))
             echo '<p class="alert alert-success">'.$this->session->flashdata('register_voter').'</p>'; ?>
+    <?php 
+        if($this->session->flashdata('login_voter_failed'))
+            echo '<p class="alert alert-success">'.$this->session->flashdata('login_voter_failed').'</p>'; ?>
+     
     <div class="preloader">
         <div class="sk-spinner sk-spinner-pulse"></div>
     </div>
@@ -30,7 +34,7 @@
                 ?>
                 <?php echo validation_errors(); ?>
                 <?php echo form_open('login_voter'); ?>
-               <form class="modal-content animate" action="home_voter" method="post">
+               <form class="modal-content animate" action="home" method="post">
                     <div class="imgcontainer">
                         <h1 style="font-family: montserrat;font-size: 40px;text-align: center; padding: 30px; color: #d2b48c;">LOGIN AS VOTER</h1>
                     </div>
@@ -40,8 +44,8 @@
 
                         <label for="pw_voter" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="pw_voter" required>
-                    <form method ="get" action="home_voter">
-                        <button type="submit" value="Sign In" style="border-radius: 10px;margin-left: 150px" href="home_voter" >Login</button>
+                    <form method ="get" action="home">
+                        <button type="submit" value="Sign In" style="border-radius: 10px;margin-left: 150px" href="home" >Login</button>
                     </form>
                         <label style="color: black; font-family: montserrat; margin-left: 20px; display: inline-block;">
                             <input type="checkbox" checked="checked" name="remember">Remember Me!

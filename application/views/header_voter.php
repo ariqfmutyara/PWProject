@@ -1,12 +1,11 @@
     
 <!-- Header - VOTERS section isinya slider foto photo of the day kalo di klik nanti kehubung sm page tampiln foto
 ================================================== -->
-<?php 
-        if($this->session->flashdata('login_voter_failed'))
-            echo '<p class="alert alert-success">'.$this->session->flashdata('login_voter_failed').'</p>'; ?>
+
 <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/style-header.css">
 <section id="header" class="header-header">
 	<div class="container">
+
 		<div class="row">
 			<div class="col-md-offset-3 col-md-6 col-sm-offset-2 col-sm-8">
           <div class="header-thumb">
@@ -18,6 +17,7 @@
 			  <a href="#"><img src="<?php echo base_url();?>assets/foto/blog-img9.jpg"></a>
 			  <a href="#"><img src="<?php echo base_url();?>assets/foto/blog-img6.jpg"></a>
               </figure>
+             
             </div><h1>Photo Of The Day</h1>
           </div>
 			</div>
