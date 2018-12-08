@@ -11,12 +11,12 @@
 </head>
 
 <body>
-    <?php 
-        if($this->session->flashdata('register_artist'))
-            echo '<p class="alert alert-success">'.$this->session->flashdata('register_artist ').'</p>'; ?>
-    <?php 
-        if($this->session->flashdata('login_user_failed'))
-            echo '<p class="alert alert-success">'.$this->session->flashdata('login_user_failed').'</p>'; ?>
+    <?php if($this->session->flashdata('register_artist')) : ?>
+        <?php echo '<p style="background-color: blue;" class="alert alert-success">'.$this->session->flashdata('register_artist ').'</p>'; ?>
+    <?php endif; ?>
+    <?php if($this->session->flashdata('login_user_failed')) : ?>
+        <?php echo '<p class="alert alert-success">'.$this->session->flashdata('login_user_failed').'</p>'; ?>
+    <?php endif; ?>
     <div class="preloader">
         <div class="sk-spinner sk-spinner-pulse"></div>
     </div>

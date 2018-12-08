@@ -44,7 +44,7 @@ class Login extends CI_Controller {
 
 	public function login_artist() 
 	{
-		$data['title'] = 'Login Voter';
+		$data['title'] = 'Login Artist';
 
 		$this->form_validation->set_rules('username_user', 'Enter Username', 'required');
 		$this->form_validation->set_rules('pw_user', 'Enter Password', 'required');
