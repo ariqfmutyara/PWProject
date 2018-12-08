@@ -88,7 +88,7 @@ class Register extends CI_Controller {
 	{
 		$this->form_validation->set_message('check_email_users', 'Email is Taken, Try Another!!!');
 
-		if($this->register_model->check_email_users($username))
+		if($this->register_model->check_email_users($email))
 			return true; 
 		else
 			return false;
