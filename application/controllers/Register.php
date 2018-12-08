@@ -15,15 +15,16 @@ class Register extends CI_Controller {
 		$data['title'] = 'Register Voter';
 
 		$this->form_validation->set_rules('name_voter', 'Enter fullname', 'required');
-		$this->form_validation->set_rules('username_voter', 'Enter Username', 'required|callback_check_username_exists');
-		$this->form_validation->set_rules('email_voter', 'Enter email', 'required');
+		$this->form_validation->set_rules('username_voter', 'Enter Username', 'required|callback_check_username_voters');
+		$this->form_validation->set_rules('email_voter', 'Enter email', 'required|callback_check_email_voters');
 		$this->form_validation->set_rules('pw_voter', 'Enter Password', 'required');
 		$this->form_validation->set_rules('pw_voter1', 'Confirm Password', 'matches[pw_voter]');
 
 		if($this->form_validation->run() == FALSE) 
 			$this->load->view('register_voter', $data);
 		else {
-			$enc = $this->input->post('pw_voter');
+			$enc = md5($this->input->post('pw_voter'));
+			$this->register_model->register_voter($enc);
 
 			$this->session->set_flashdata('register_voter', 'Registered Successfull');
 
@@ -36,8 +37,8 @@ class Register extends CI_Controller {
 		$data['title'] = 'Register Artist';
 
 		$this->form_validation->set_rules('name_user', 'Enter fullname', 'required');
-		$this->form_validation->set_rules('username_user', 'Enter Username', 'required');
-		$this->form_validation->set_rules('email_user', 'Enter email', 'required');
+		$this->form_validation->set_rules('username_user', 'Enter Username', 'required|callback_check_username_users');
+		$this->form_validation->set_rules('email_user', 'Enter email', 'required|callback_check_email_users');
 		$this->form_validation->set_rules('pw_user', 'Enter Password', 'required');
 		$this->form_validation->set_rules('pw_user1', 'Confirm Password', 'matches[pw_user]');
 
@@ -67,7 +68,27 @@ class Register extends CI_Controller {
 	{
 		$this->form_validation->set_message('check_username_users', 'Username is Taken, Try Another!!!');
 
-		if($this->register_model->check_username_exists($username))
+		if($this->register_model->check_username_users($username))
+			return true; 
+		else
+			return false;
+	}
+
+	public function check_email_voters($email) 
+	{
+		$this->form_validation->set_message('check_email_voters', 'Email is Taken, Try Another!!!');
+
+		if($this->register_model->check_email_voters($email))
+			return true; 
+		else
+			return false;
+	}
+
+	public function check_username_users($email) 
+	{
+		$this->form_validation->set_message('check_email_users', 'Email is Taken, Try Another!!!');
+
+		if($this->register_model->check_email_users($username))
 			return true; 
 		else
 			return false;

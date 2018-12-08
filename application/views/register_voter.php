@@ -43,10 +43,10 @@
                         <input type="password" placeholder="Confirm Password" name="pw_voter1" required>
                         <br />
 
-                    <form method ="get" action="<?php echo base_url("/Home_artist")?>">
-                        <button type="submit" style="border-radius: 10px;margin-left: 150px;color:black;><a href="login_artist">Create Account</a></button>
+                    <form method ="get" action="login_voter">
+                        <button type="submit" style="border-radius: 10px;margin-left: 150px;color:black;><a href="login_voter">Create Account</a></button>
                     </form>
-                    <form method ="get" action="<?php echo base_url("/Home")?>">
+                    <form method ="get" action="home">
                         <button type="submit" class="cancelbtn" style="border-radius: 10px; margin-left: 157px;">Cancel</button>
                     </form>
                     </div>

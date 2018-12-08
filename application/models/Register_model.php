@@ -42,5 +42,23 @@
 			else
 				return false;
 		}
+
+		public function check_email_voters($email) 
+		{
+			$query = $this->db->get_where('voters', array('email_voter => $email'));
+			if(empty($query->row_array()))
+				return true;
+			else
+				return false;
+		}
+
+		public function check_email_users($email) 
+		{
+			$query = $this->db->get_where('users', array('email_user => $email'));
+			if(empty($query->row_array()))
+				return true;
+			else
+				return false;
+		}
 	}
 ?>

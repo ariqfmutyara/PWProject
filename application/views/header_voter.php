@@ -1,6 +1,9 @@
     
 <!-- Header - VOTERS section isinya slider foto photo of the day kalo di klik nanti kehubung sm page tampiln foto
 ================================================== -->
+<?php 
+        if($this->session->flashdata('login_voter_failed'))
+            echo '<p class="alert alert-success">'.$this->session->flashdata('login_voter_failed').'</p>'; ?>
 <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/style-header.css">
 <section id="header" class="header-header">
 	<div class="container">
