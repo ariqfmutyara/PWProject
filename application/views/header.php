@@ -1,6 +1,18 @@
     
 <!-- Header awal section isinya slider foto tentang VOTART
 ================================================== -->
+ <?php 
+        if($this->session->flashdata('login_voter_success'))
+            echo '<p class="alert alert-success">'.$this->session->flashdata('login_voter_success').'</p>'; ?>
+<?php 
+        if($this->session->flashdata('logout_voter_success'))
+            echo '<p class="alert alert-success">'.$this->session->flashdata('logout_voter_success').'</p>'; ?>
+<?php 
+        if($this->session->flashdata('login_user_success'))
+            echo '<p class="alert alert-success">'.$this->session->flashdata('login_user_success').'</p>'; ?>
+<?php 
+        if($this->session->flashdata('logout_user_success'))
+            echo '<p class="alert alert-success">'.$this->session->flashdata('logout_user_success').'</p>'; ?>
 <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/style-header.css">
 <section class="header-awal">
 	<div class="container">

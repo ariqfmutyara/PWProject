@@ -84,7 +84,7 @@ class Register extends CI_Controller {
 			return false;
 	}
 
-	public function check_username_users($email) 
+	public function check_email_users($email) 
 	{
 		$this->form_validation->set_message('check_email_users', 'Email is Taken, Try Another!!!');
 

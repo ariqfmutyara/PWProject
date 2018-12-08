@@ -23,31 +23,31 @@
                <form class="modal-content animate" action="login_voter" method="post">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span><a href=""></a>
-                        <h1 style="font-family: montserrat;font-size: 40px;text-align: center; color:  white;">CREATE AN ACCOUNT</h1>
+                        <h1 style="font-family: montserrat;font-size: 40px;text-align: center; color:  #d2b48c;">BUAT AKUN BARU</h1>
                     </div>
                     
                     <div class="container">
-                        <label for="name_voter" style="color: white; font-family: montserrat; font-size: 20px"><b>Full name</b></label>
+                        <label for="name_voter" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Nama Lengkap</b></label>
                         <input type="text" placeholder="Enter fullname" name="name_voter" required>
 
-                        <label for="username_voter" style="color: white; font-family: montserrat; font-size: 20px"><b>Username</b></label>
+                        <label for="username_voter" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Nama Pengguna</b></label>
                         <input type="text" placeholder="Enter Username" name="username_voter" required>
 
-                        <label for="email_voter" style="color: white; font-family: montserrat; font-size: 20px"><b>Email</label>
+                        <label for="email_voter" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>e-Mail</label>
                         <input type="text" placeholder="Enter email" name="email_voter" required>
 
-                        <label for="pw_voter" style="color: white; font-family: montserrat; font-size: 20px"><b>Password</b></label>
+                        <label for="pw_voter" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Kata Sandi</b></label>
                         <input type="password" placeholder="Enter Password" name="pw_voter" required>
 
-                        <label for="pw_voter1" style="color: white; font-family: montserrat; font-size: 20px"><b>Confirm Password</b></label>
+                        <label for="pw_voter1" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Ulangi Kata Sandi</b></label>
                         <input type="password" placeholder="Confirm Password" name="pw_voter1" required>
                         <br />
 
                     <form method ="get" action="login_voter">
-                        <button type="submit" style="border-radius: 10px;margin-left: 150px;color:black;><a href="login_voter">Create Account</a></button>
+                        <button type="submit" style="border-radius: 10px;margin-left: 150px;color:black;><a href="login_voter">Buat Akun</a></button>
                     </form>
                     <form method ="get" action="home">
-                        <button type="submit" class="cancelbtn" style="border-radius: 10px; margin-left: 157px;">Cancel</button>
+                        <button type="submit" class="cancelbtn" style="border-radius: 10px; margin-left: 157px;">Kembali</button>
                     </form>
                     </div>
                     <div class="container">  
