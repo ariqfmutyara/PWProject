@@ -1,7 +1,262 @@
 body{
-	background-color: #f1f2e9;
-  	background-image: linear-gradient(to top, #f9f9f9, #e3e3e3);
-  	height: 40vh !important;
-  	min-height: 465px;
-  	padding-top: 150px !important;
+	background-image: linear-gradient(to top right, #d2b48c, #694b89);
+	
+	background-attachment: fixed;
+	font-family: 'montserrat';
+}
+
+html,body {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%
+}
+
+.post-photo{
+	width: 800px;
+	height: 520px;
+  	background-color : white;
+	margin: 20px auto auto auto;
+	filter: drop-shadow(0px 0px 20px #404040);
+}
+
+.konten-grid1{
+	display: grid;
+  	grid-template-columns: auto auto auto;
+  	background-color: white;
+}
+
+
+.konten-photo{
+  	font-size: 12px;
+  	text-align: center;
+  	width: 520px;height:520px;
+
+
+}
+
+
+.image img{
+	width: 100%;
+	height: 100%;
+	opacity: 0.95;
+	transition: 0.2s;
+}
+
+.image img:hover{
+	width: 101%;
+	height: 101.5%;
+	opacity: 1;
+}
+
+
+.user-acc{
+	background-color: transparent;
+	width: 260px;
+	height: 100px;
+	color: #694b89;
+}
+
+.caption{
+	background-color: transparent;
+	width: 260px;
+	height: 400px;
+	color: black;
+
+}
+
+h1{
+	float: left;
+	width: 250px;
+	background-color: transparent;
+	margin:auto;
+	margin-left: 10px;
+	font-size: 20px;
+}
+a{
+	text-decoration: none;
+	color: black;
+	opacity: 0.6;
+	transition: 0.2s;
+}
+
+a:hover{
+	text-decoration: none;
+	color: red;
+	opacity: 1;
+} 
+a #backward{
+	float: left;
+	width: 150px;
+	background-color:transparent;
+	text-decoration: none;
+	margin: 30px 0 0 10px;
+	text-align: left;
+
+
+
+}
+
+
+a #backward:hover{
+	float: left;
+	width: 150px;
+	background-color:transparent;
+	text-decoration: none;
+	margin: 30px 0 0 10px;
+	text-align: left;
+	opacity: 1;
+
+
+}
+
+
+#username{
+	float: left;
+	width: 150px;
+	background-color:transparent;
+	text-decoration: none;
+	color: black;
+	margin: 30px 0 0 10px;
+	text-align: left;
+
+}
+
+
+
+
+
+img{
+	margin: ;
+	width: 50px;
+	height: 50px;
+}
+
+.caption{
+	background-color: transparent;
+}
+
+textarea{
+	width: 240px;
+	height: 320px;
+	background-color: transparent;
+	text-align: justify;
+	resize: none;
+	border: none;
+	margin-left: 10px;
+
+}
+.like-button{
+	width: 50px;
+	height: 50px;
+	background-color: transparent;
+
+}
+.konten-grid2{
+	margin-left: 30px;
+	display: grid;
+  	grid-template-columns: auto auto auto;
+  	background-color: transparent;
+}
+
+.button{
+  background-color: white;
+  border: 0;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  cursor: pointer;
+  width: 60px;
+  height: 60px;
+  border-radius: 100%;
+  transition: 0.5s;
+  opacity: 0.6;
+}
+
+.button:hover{
+  filter: drop-shadow(10px 10px 0px #6a696b);
+  background-color :#3e255a;
+  opacity: 1;
+}
+
+#thumb1{
+	color: #c7a8e7;
+	transition: 0.5s;
+	background-color: transparent;
+	font-size: 30px;
+	width: 50px;
+	height: 40px;
+	padding-top: 10px;
+}
+
+#thumb1:hover{
+	color: #5f20a3;
+	width: 50px;
+	height: 40px;
+	border-radius: 50px;
+	background-color: #a770e1;
+
+}
+
+#thumb1:visited{
+	color: #1780cc;
+	
+
+}
+
+#hapus{
+	color: #c7a8e7;
+	transition: 0.5s;
+	background-color: transparent;
+	font-size: 30px;
+	width: 50px;
+	height: 40px;
+	padding-top: 10px;
+}
+
+#hapus:hover{
+	color: #5f20a3;
+	width: 50px;
+	height: 40px;
+	border-radius: 50px;
+	background-color: #a770e1;
+
+}
+
+#hapus:visited{
+	color: #1780cc;
+	
+
+}
+#edit{
+	color: #c7a8e7;
+	transition: 0.5s;
+	background-color: transparent;
+	font-size: 30px;
+	width: 50px;
+	height: 40px;
+	padding-top: 10px;
+}
+
+#edit:hover{
+	color: #5f20a3;
+	width: 50px;
+	height: 40px;
+	border-radius: 50px;
+	background-color: #a770e1;
+
+}
+
+#edit:visited{
+	color: #1780cc;
+	
+
+}
+
+p{ /*jumlah likes nya*/
+	color: #694b89;
+	font-family: montserrat;
+	font-size: 12px;
+	background-color: transparent;
+	width: 45px;
+	margin-left: 2px;
 }
