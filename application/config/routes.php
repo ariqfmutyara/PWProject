@@ -65,6 +65,8 @@ $route['home_voter'] = 'Home_voter';
 $route['home_artist'] = 'Home_artist';
 
 $route['footer_aboutus'] = 'About_Us';
+$route['editartist'] = 'Edit_artist';
+$route['uploadfoto'] = 'Upload_foto';
 
 $route['register'] = 'Register';
 $route['404_override'] = '';

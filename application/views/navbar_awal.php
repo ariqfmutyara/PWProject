@@ -43,13 +43,13 @@
                 <li class="dropdown">
                     <a class="dropbtn" style=""><?php echo $this->session->userdata('username_user'); ?></a>
                         <div class="dropdown-content">
-                            <a href="logout_artist" class="dropbtn" style="width:206px;">Edit Profile</a>
+                            <a href="editartist" class="dropbtn" style="width:206px;">Edit Profile</a>
                             <a href="logout_artist" class="dropbtn" style="width:206px;">My Gallery</a>
                             <a href="logout_artist" class="dropbtn" style="width:206px;">Log out</a>
                         </div>
                  </li>
                  <li>
-                    <a class="dropbtn" href="<?php echo base_url()?>footer_aboutus">Upload</a>
+                    <a class="dropbtn" href="<?php echo base_url()?>uploadfoto">Upload</a>
                 </li>
                 <?php endif; ?>
             </ul>

@@ -23,31 +23,31 @@
                <form class="modal-content animate" action="login_artist" method="post">
                     <div class="imgcontainer">
                         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span><a href=""></a>
-                        <h1 style="font-family: montserrat;font-size: 40px;text-align: center; color:  #d2b48c;">BUAT AKUN BARU</h1>
+                        <h1 style="font-family: montserrat;font-size: 40px;text-align: center; color:  #d2b48c; padding: 10px;">CREATE ARTIST ACCOUNT</h1>
                     </div>
 
                     <div class="container">
-                        <label for="name_user" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Nama Lengkap</b></label>
+                        <label for="name_user" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Full name</b></label>
                         <input type="text" placeholder="Enter fullname" name="name_user" required>
 
-                        <label for="username_user" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Nama Pengguna</b></label>
+                        <label for="username_user" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Username </b></label>
                         <input type="text" placeholder="Enter Username" name="username_user" required>
 
                         <label for="email_user" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>e-Mail</label>
                         <input type="text" placeholder="Enter email" name="email_user" required>
 
-                        <label for="pw_user" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Kata Sandi</b></label>
+                        <label for="pw_user" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Password </b></label>
                         <input type="password" placeholder="Enter Password" name="pw_user" required>
 
-                        <label for="pw_user1" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Ulangi Kata Sandi</b></label>
+                        <label for="pw_user1" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="pw_user1" required>
                     
                     <form method ="get" action="<?php echo base_url("/Home_artist")?>">
-                        <button type="submit" style="border-radius: 10px;margin-left: 150px;color:black;"><a href="login_artist">Buat Akun</a></button>
+                        <button type="submit" style="border-radius: 10px;margin-left: 150px;color:black;"><a href="login_artist">Register</a></button>
                     </form>
                     
                     <form method ="get" action="<?php echo base_url("/Home")?>">
-                        <button type="submit" class="cancelbtn" style="border-radius: 10px; margin-left: 157px;">Kembali</button>
+                        <button type="submit" class="cancelbtn" style="border-radius: 10px; margin-left: 157px;">Cancel</button>
                     </form>
                     </div>
                     <div class="container">

@@ -35,7 +35,7 @@
                 <?php echo form_open('login_artist'); ?>
                <form class="modal-content animate" action="home">
                     <div class="imgcontainer">
-                        <h1 style="font-family: montserrat;font-size: 40px;text-align: center; padding: 30px; color: #d2b48c;">LOGIN AS ARTIST</h1>
+                        <h1 style="font-family: montserrat;font-size: 40px;text-align: center; padding: 30px; color: #d2b48c;">LOG IN AS ARTIST</h1>
                     </div>
                     <div class="container" >
                         <label for="username_user" style="color: black; font-family: montserrat; font-size: 20px;text-align: center;"><b style="text-align: center;">Username</b></label>

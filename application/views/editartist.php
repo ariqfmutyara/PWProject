@@ -9,7 +9,7 @@
         <div class="square1">
             <!--<form class="modal-content animate" action="controllers/Home.php">-->
             <div class="imgcontainer">
-                <h1 style="font-family: montserrat;font-size: 40px;text-align: center; padding: 30px; color:#d2b48c;">EDIT PROFILE</h1>
+                <h1 style="font-family: montserrat;font-size: 40px;text-align: center; padding: 30px; color:#d2b48c;">EDIT PROFILE ARTIST</h1>
             </div>
             <div class="container">
             <label for="avatar" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center; padding: 50px">Choose Photo</b></label>

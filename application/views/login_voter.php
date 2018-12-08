@@ -36,7 +36,7 @@
                 <?php echo form_open('login_voter'); ?>
                <form class="modal-content animate" action="home" method="post">
                     <div class="imgcontainer">
-                        <h1 style="font-family: montserrat;font-size: 40px;text-align: center; padding: 30px; color: #d2b48c;">LOGIN AS VOTER</h1>
+                        <h1 style="font-family: montserrat;font-size: 40px;text-align: center; padding: 30px; color: #d2b48c;">LOG IN AS VOTER</h1>
                     </div>
                     <div class="container" >
                         <label for="username_voter" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center;"><b style="text-align: center;">Username</b></label>
