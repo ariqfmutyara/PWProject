@@ -64,7 +64,7 @@ $route['logout_artist'] = 'Logout/logout_artist';
 $route['home_voter'] = 'Home_voter';
 $route['home_artist'] = 'Home_artist';
 
-$route['about_us'] = 'About_Us';
+$route['footer_aboutus'] = 'About_Us';
 
 $route['register'] = 'Register';
 $route['404_override'] = '';

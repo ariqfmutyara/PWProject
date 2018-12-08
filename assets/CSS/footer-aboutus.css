@@ -1,0 +1,123 @@
+body{
+    background-image: linear-gradient(to top right, #d2b48c, #694b89); 
+	background-attachment: fixed;
+	font-family: 'montserrat';
+}
+
+html,body {
+  width: 100%;
+  overflow-x: hidden;
+  height: 100%;
+}
+
+.post-photo{
+	width: 1000px;
+	height: 400px;
+  	background-color: transparent;
+	margin: 0px auto auto auto;
+}
+
+.konten-grid1{
+	display: grid;
+  	grid-template-columns: auto auto auto;
+  	height: 400px;
+}
+
+
+ul{
+  	background-color: transparent;
+
+
+}
+.konten-photo{
+  	font-size: 12px;
+  	text-align: center;
+  	width: 200px;height:200px;
+  	background-color: transparent;
+  	margin: 10px 0px 0px 25px;
+}
+
+
+h2{
+	font-size: 14px;
+	margin-top: 30px;
+	transition: 0.3s;
+	background-color: transparent;
+	width: 180px;
+	padding-left: 10px;
+	padding-right: 20px;
+	text-align: center;
+
+}
+h2:hover{
+	font-size: 17px;
+	margin-top: 30px;
+	color: yellow;
+
+}
+
+
+h1{
+	width: 350px;
+	background-color: transparent;
+	font-size: 40px;
+	text-align: center;
+	color: white;
+	margin: auto;
+	margin-top: 30px;
+}
+
+#isi{ 
+	height: 20px;
+	list-style-type: none;
+	background-color: transparent;
+	color: white;
+
+}
+
+img{
+	width: 200px;
+	height: 200px;
+	border-radius: 1000px 1000px 1000px 1000px;
+	transition: 0.4s;
+	opacity: 0.8;
+	cursor: pointer;
+	-webkit-transition: width 0.5s, height 0.5s, -webkit-transform 0.5s; /* Safari */
+  	transition: width 0.5s, height 0.5s, transform 0.5s;
+
+}
+img:hover{
+	opacity: 1;
+	width: 215px;
+	height: 215px;
+	-webkit-transform: rotate(7deg); /* Safari */
+  	transform: rotate(7deg);
+
+}
+
+/* Konten Luthfi*/ 
+#konten1{
+	background-color: transparent;
+	list-style-type: none;
+	margin-top: 60px;
+
+}
+/*batas luthfi*/
+
+/* Konten Agnes*/ 
+#konten2{
+	background-color: transparent;
+	list-style-type: none;
+	margin-top: 60px;
+}
+
+/*batas Agnes*/
+
+/* Konten Ariq*/ 
+#konten3{
+	background-color: transparent;
+	list-style-type: none;
+	margin-top: 60px;
+}
+
+/*batas Ariq*/

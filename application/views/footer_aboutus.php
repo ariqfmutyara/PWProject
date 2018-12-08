@@ -1,6 +1,6 @@
-<link rel="stylesheet" type="text/css" href="assets/CSS/footer-aboutus.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+
+<link rel="stylesheet" type="text/css" href="<?php echo base_url();?>assets/CSS/footer-aboutus.css">
 <div>
     <h1>MEET OUR TEAM</h1>
     <div class="post-photo">

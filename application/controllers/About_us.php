@@ -5,7 +5,6 @@ class About_us extends CI_Controller {
 
 	public function index()
 	{
-		$this->load->view('navbar_awal');
-		$this->load->view('container_about_us');	}
+		$this->load->view('footer_aboutus');	}
 }
 ?>

@@ -12,8 +12,11 @@
         <div class="navicon">
             <ul>
                 <?php if(!$this->session->userdata('logged_in_voter') && !$this->session->userdata('logged_in_user') ) : ?>
+                <li>
+                    <a class="dropbtn" href="<?php echo base_url()?>footer_aboutus">About Us</a>
+                </li>
                 <li class="dropdown">
-                    <a class="dropbtn" style="margin-right:20px;width:55px; ">Login</a>
+                    <a class="dropbtn" style="width:55px; ">Login</a>
                         <div class="dropdown-content">
 
                             <a href="<?php echo base_url()?>login_voter" class="dropbtn" >As Voter</a>
@@ -26,6 +29,7 @@
                         <a href="<?php echo base_url()?>register_artist" class="dropbtn">As Artist</a>
                     </div>
                 </li>
+                
                 <?php endif; ?>
                 <?php if($this->session->userdata('logged_in_voter')) : ?>
                 <li class="dropdown">
