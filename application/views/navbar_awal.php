@@ -11,7 +11,7 @@
         </div>
         <div class="navicon">
             <ul>
-                <?php if(!$this->session->userdata('logged_in_voter') || !$this->session->userdata('logged_in_user') ) : ?>
+                <?php if(!$this->session->userdata('logged_in_voter') && !$this->session->userdata('logged_in_user') ) : ?>
                 <li class="dropdown">
                     <a class="dropbtn" style="margin-right:20px;width:55px; ">Login</a>
                         <div class="dropdown-content">
@@ -37,7 +37,7 @@
                 <?php endif; ?>
                 <?php if($this->session->userdata('logged_in_user')) : ?>
                 <li class="dropdown">
-                    <a class="dropbtn" style=""><?php echo $this->session->userdata('username_user'); ?>;</a>
+                    <a class="dropbtn" style=""><?php echo $this->session->userdata('username_user'); ?></a>
                         <div class="dropdown-content">
                             <a href="logout_artist" class="dropbtn">Log out</a>
                         </div>

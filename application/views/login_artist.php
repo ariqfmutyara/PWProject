@@ -38,17 +38,10 @@
                         <h1 style="font-family: montserrat;font-size: 40px;text-align: center; padding: 30px; color: #d2b48c;">LOGIN AS ARTIST</h1>
                     </div>
                     <div class="container" >
-
-                        <label for="USERID" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center;"><b style="text-align: center;">Username</b></label>
-                        <input type="text" placeholder="Enter Username" name="id_user" required>
-
-                        <label for="PASSWORD" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Password</b></label>
-
-                        <label for="username_user" style="color: white; font-family: montserrat; font-size: 20px;text-align: center;"><b style="text-align: center;">Username</b></label>
+                        <label for="username_user" style="color: black; font-family: montserrat; font-size: 20px;text-align: center;"><b style="text-align: center;">Username</b></label>
                         <input type="text" placeholder="Enter Username" name="username_user" required>
 
-                        <label for="pw_user" style="color: white; font-family: montserrat; font-size: 20px"><b>Password</b></label>
-
+                        <label for="pw_user" style="color: black; font-family: montserrat; font-size: 20px"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="pw_user" required>
                         
                         <form method ="get" action="home">

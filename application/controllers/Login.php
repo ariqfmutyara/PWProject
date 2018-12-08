@@ -70,7 +70,7 @@ class Login extends CI_Controller {
 				}
 			else {
 				$this->session->set_flashdata('login_user_failed', 'Login Failed, Please check your username and password');
-				redirect('login_user');
+				redirect('login_artist');
 			}
 		}
 	}

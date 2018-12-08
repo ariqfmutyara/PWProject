@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 05, 2018 at 07:21 AM
+-- Generation Time: Dec 08, 2018 at 12:02 PM
 -- Server version: 10.1.35-MariaDB
 -- PHP Version: 7.2.9
 
@@ -48,6 +48,13 @@ CREATE TABLE `users` (
   `register_date_user` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `users`
+--
+
+INSERT INTO `users` (`id`, `username_user`, `email_user`, `pw_user`, `name_user`, `register_date_user`) VALUES
+(1, 'ariqfmutyara', 'ariqmutyara@gmail.com', '5d5b321b8059be9389488598f51a03b4', 'Muhammad Ariq Farhansyah Mutyara', '2018-12-08 10:45:42');
+
 -- --------------------------------------------------------
 
 --
@@ -58,10 +65,17 @@ CREATE TABLE `voters` (
   `id_voters` int(50) NOT NULL,
   `username_voter` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `email_voter` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
-  `pw_voters` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
+  `pw_voter` varchar(50) COLLATE utf8_unicode_ci NOT NULL,
   `name_voter` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `register_date_voter` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `voters`
+--
+
+INSERT INTO `voters` (`id_voters`, `username_voter`, `email_voter`, `pw_voter`, `name_voter`, `register_date_voter`) VALUES
+(2, 'ariqfmutyara', 'ariqmutyara@gmail.com', '5d5b321b8059be9389488598f51a03b4', 'Muhammad Ariq Farhansyah Mutyara', '2018-12-08 06:44:59');
 
 --
 -- Indexes for dumped tables
@@ -87,13 +101,13 @@ ALTER TABLE `voters`
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
 
 --
 -- AUTO_INCREMENT for table `voters`
 --
 ALTER TABLE `voters`
-  MODIFY `id_voters` int(50) NOT NULL AUTO_INCREMENT;
+  MODIFY `id_voters` int(50) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

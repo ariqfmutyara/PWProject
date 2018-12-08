@@ -20,7 +20,7 @@ class Logout extends CI_Controller {
 		redirect('home');
 	}
 
-	public function login_artist() 
+	public function logout_artist() 
 	{
 		$this->session->unset_userdata('user');
 		$this->session->unset_userdata('username_user');
