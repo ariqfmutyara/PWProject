@@ -32,19 +32,19 @@
                 <?php echo form_open('login_voter'); ?>
                <form class="modal-content animate" action="home_voter" method="post">
                     <div class="imgcontainer">
-                        <h1 style="font-family: montserrat;font-size: 40px;text-align: center; padding: 30px; color: white;">LOG IN</h1>
+                        <h1 style="font-family: montserrat;font-size: 40px;text-align: center; padding: 30px; color: #d2b48c;">LOGIN AS VOTER</h1>
                     </div>
                     <div class="container" >
-                        <label for="username_voter" style="color: white; font-family: montserrat; font-size: 20px;text-align: center;"><b style="text-align: center;">Username</b></label>
+                        <label for="username_voter" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center;"><b style="text-align: center;">Username</b></label>
                         <input type="text" placeholder="Enter Username" name="username_voter" required>
 
-                        <label for="pw_voter" style="color: white; font-family: montserrat; font-size: 20px"><b>Password</b></label>
+                        <label for="pw_voter" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="pw_voter" required>
                     <form method ="get" action="home_voter">
                         <button type="submit" value="Sign In" style="border-radius: 10px;margin-left: 150px" href="home_voter" >Login</button>
                     </form>
                         <label style="color: black; font-family: montserrat; margin-left: 20px; display: inline-block;">
-                            <input type="checkbox" checked="checked" name="remember">Remember me
+                            <input type="checkbox" checked="checked" name="remember">Remember Me!
                         </label>
                     </div>
                     <div class="container">
@@ -52,7 +52,7 @@
                         <button type="submit" class="cancelbtn" style="border-radius: 10px; margin-left: 150px;">Cancel</button>
                     </form>
                             <br>
-                                <span class="psw" style="font-family: montserrat; text-decoration: none; color:;margin-left: 250px;">Forgot <a href="#"  style="font-family: montserrat; text-decoration: none;color :black">password?</a></span>
+                                <span class="psw" style="font-family: montserrat; text-decoration: none; color:;margin-left: 250px;">Forgot <a href="#"  style="font-family: montserrat; text-decoration: none;color :black">Password?</a></span>
                             </br>
                      <div class="container">
                      <form method ="get" action="register_voter">

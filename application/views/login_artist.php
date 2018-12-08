@@ -26,20 +26,20 @@
             <div class=square1>
                <form class="modal-content animate" action="controllers/Home.php">
                     <div class="imgcontainer">
-                        <h1 style="font-family: montserrat;font-size: 40px;text-align: center; padding: 30px; color: white;">LOG IN</h1>
+                        <h1 style="font-family: montserrat;font-size: 40px;text-align: center; padding: 30px; color: #d2b48c;">LOGIN AS ARTIST</h1>
                     </div>
                     <div class="container" >
-                        <label for="USERID" style="color: white; font-family: montserrat; font-size: 20px;text-align: center;"><b style="text-align: center;">Username</b></label>
+                        <label for="USERID" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center;"><b style="text-align: center;">Username</b></label>
                         <input type="text" placeholder="Enter Username" name="id_user" required>
 
-                        <label for="PASSWORD" style="color: white; font-family: montserrat; font-size: 20px"><b>Password</b></label>
+                        <label for="PASSWORD" style="color: #694b89; font-family: montserrat; font-size: 20px"><b>Password</b></label>
                         <input type="password" placeholder="Enter Password" name="pw_user" required>
                         
                         <form method ="get" action="<?php echo base_url("/Home")?>">
                             <button type="submit" value="Sign In" style="border-radius: 10px;margin-left: 150px">Login</button>
                         </form>
                         <label style="color: black; font-family: montserrat; margin-left: 20px; display: inline-block;">
-                            <input type="checkbox" checked="checked" name="remember">Remember me
+                            <input type="checkbox" checked="checked" name="remember">Remember me!
                         </label>
                     </div>
                     <div class="container">
@@ -48,7 +48,7 @@
                         
                     </form>
                     <br>
-                                <span class="psw" style="font-family: montserrat; text-decoration: none; color:;margin-left: 250px;">Forgot <a href="#"  style="font-family: montserrat; text-decoration: none;color :black">password?</a></span>
+                                <span class="psw" style="font-family: montserrat; text-decoration: none; color:;margin-left: 250px;">Forgot<a href="#"  style="font-family: montserrat; text-decoration: none;color :black"> Password?</a></span>
                             </br>
                      <div class="container">
                      <form method ="get" action="<?php echo base_url("/register_voter")?>">
