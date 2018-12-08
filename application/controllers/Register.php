@@ -53,9 +53,19 @@ class Register extends CI_Controller {
 		}
 	}
 
-	public function check_username_exists($username) 
+	public function check_username_voters($username) 
 	{
-		$this->form_validation->set_message('check_username_exists', 'Username is Taken, Try Another!!!');
+		$this->form_validation->set_message('check_username_voters', 'Username is Taken, Try Another!!!');
+
+		if($this->register_model->check_username_voters($username))
+			return true; 
+		else
+			return false;
+	}
+
+	public function check_username_users($username) 
+	{
+		$this->form_validation->set_message('check_username_users', 'Username is Taken, Try Another!!!');
 
 		if($this->register_model->check_username_exists($username))
 			return true; 

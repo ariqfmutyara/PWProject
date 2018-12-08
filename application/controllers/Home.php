@@ -20,7 +20,6 @@ class Home extends CI_Controller {
 
 		$data['title'] = ucfirst($page1);
 		$this->load->view($page1, $data);
-
 	}
 }
 ?>
