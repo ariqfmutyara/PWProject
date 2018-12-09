@@ -57,20 +57,20 @@
                 <?php endif; ?>
                 <li style="margin-right: 40px;">
                      <?php if($this->session->flashdata('login_voter_success')) : ?>
-                    <?php echo '<p class="alert alert-success">'.$this->session->flashdata('login_voter_success').'</p>'; ?>
+                    <?php echo '<p class="alert alert-success" id="nav">'.$this->session->flashdata('login_voter_success').'</p>'; ?>
                      <?php endif; ?>
                     <?php if($this->session->flashdata('logout_voter_success')) : ?>
-                        <?php echo '<p class="alert alert-success">'.$this->session->flashdata('logout_voter_success').'</p>'; ?>
+                        <?php echo '<p class="alert alert-success"  id="nav">'.$this->session->flashdata('logout_voter_success').'</p>'; ?>
                     <?php endif; ?>
                     <?php if($this->session->flashdata('login_user_success')) : ?>
-                        <?php echo '<p class="alert alert-success">'.$this->session->flashdata('login_user_success').'</p>'; ?>
+                        <?php echo '<p class="alert alert-success"  id="nav">'.$this->session->flashdata('login_user_success').'</p>'; ?>
                     <?php endif; ?>
                     <?php if($this->session->flashdata('logout_user_success')) : ?>
-                        <?php echo '<p class="alert alert-success">'.$this->session->flashdata('logout_user_success').'</p>'; ?>
+                        <?php echo '<p class="alert alert-success"  id="nav">'.$this->session->flashdata('logout_user_success').'</p>'; ?>
                     <?php endif; ?>
                     <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/style-header.css">
                     <style>
-                        p{
+                        #nav{
                             color: #694b89;
                             background-color: #694b89;
                             width: 40px;
@@ -85,7 +85,7 @@
                             padding-top: 15px;
 
                         }
-                      p:hover{
+                      #nav:hover{
                             color: white;
                             background-color: #694b89;
                             width: 150px;
