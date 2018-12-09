@@ -7,7 +7,7 @@
 <body>
     <div class="navbar">
         <div class="brand">
-            <a href="index.html" style="
+            <a href="<?php echo base_url()?>home" style="
   background: -webkit-linear-gradient(#d2b48c, #694b89);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;">VOTART</a>
