@@ -7,7 +7,10 @@
 <body>
     <div class="navbar">
         <div class="brand">
-            <a href="index.html">VOTART</a>
+            <a href="index.html" style="
+  background: -webkit-linear-gradient(#d2b48c, #694b89);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;">VOTART</a>
         </div>
         <div class="navicon">
             <ul>
@@ -52,6 +55,51 @@
                     <a class="dropbtn" href="<?php echo base_url()?>uploadfoto">Upload</a>
                 </li>
                 <?php endif; ?>
+                <li style="margin-right: 40px;">
+                     <?php if($this->session->flashdata('login_voter_success')) : ?>
+                    <?php echo '<p class="alert alert-success">'.$this->session->flashdata('login_voter_success').'</p>'; ?>
+                     <?php endif; ?>
+                    <?php if($this->session->flashdata('logout_voter_success')) : ?>
+                        <?php echo '<p class="alert alert-success">'.$this->session->flashdata('logout_voter_success').'</p>'; ?>
+                    <?php endif; ?>
+                    <?php if($this->session->flashdata('login_user_success')) : ?>
+                        <?php echo '<p class="alert alert-success">'.$this->session->flashdata('login_user_success').'</p>'; ?>
+                    <?php endif; ?>
+                    <?php if($this->session->flashdata('logout_user_success')) : ?>
+                        <?php echo '<p class="alert alert-success">'.$this->session->flashdata('logout_user_success').'</p>'; ?>
+                    <?php endif; ?>
+                    <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/style-header.css">
+                    <style>
+                        p{
+                            color: #694b89;
+                            background-color: #694b89;
+                            width: 40px;
+                            height: 25px;
+                            text-decoration: none;
+                            font-family: montserrat;
+                            font-size: 0px;
+                            border-radius: 100px;
+                            transition: 0.4s;
+                            cursor: pointer;
+                            margin-top: 5px;
+                            padding-top: 15px;
+
+                        }
+                      p:hover{
+                            color: white;
+                            background-color: #694b89;
+                            width: 150px;
+                            height: 25px;
+                            text-decoration: none;
+                            font-family: montserrat;
+                            text-align: center;
+                            border-radius: 100px;
+                            font-size: 10px;
+
+
+                      }
+                    </style>
+                </li>
             </ul>
         </div>
     </div>
