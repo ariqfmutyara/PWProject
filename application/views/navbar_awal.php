@@ -83,6 +83,7 @@
                             cursor: pointer;
                             margin-top: 5px;
                             padding-top: 15px;
+                            opacity: 0.6;
 
                         }
                       #nav:hover{
@@ -95,6 +96,7 @@
                             text-align: center;
                             border-radius: 100px;
                             font-size: 10px;
+                            opacity: 1;
 
 
                       }

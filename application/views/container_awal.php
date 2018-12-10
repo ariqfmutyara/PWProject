@@ -12,7 +12,7 @@
           VOTART comes from words "vote" and "art". The word "vote" means an act of expressing a choice, and "art" means  a personal creativity and skill.
         </p>
         <p style="text-align: justify;padding: 0px 50px 0px 700px; text-indent: 2%;">
-         This application is an platform for every artist to show off the creation and masterpiece of them in digital form to art lover and give awards to the artist.<br>
+         This application is an platform for every artist to show off their creation and masterpiece in digital form to art lover and give awards to the artist.<br>
         </p>
       </div>
     </div>
