@@ -74,6 +74,22 @@ class Login extends CI_Controller {
 			}
 		}
 	}
+	public function edit_artist_view() {
+		$this->load->view('edit_artist');
+	}
+
+	public function edit_artist() 
+	{
+		$data['title'] = 'Edit Artist';
+		$pp = $this->input->post('pp');
+		$bio = $this->input->post('bio');
+
+		$user = $this->login_model->edit_artist($pp, $bio);
+
+		$this->session->set_flashdata('edit_profile_success', 'Profile Edited!');
+		redirect('home');
+		
+	}
 }
 
 ?>

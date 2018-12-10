@@ -46,7 +46,7 @@
                 <li class="dropdown">
                     <a class="dropbtn" style=""><?php echo $this->session->userdata('username_user'); ?></a>
                         <div class="dropdown-content">
-                            <a href="editartist" class="dropbtn" style="width:206px;">Edit Profile</a>
+                            <a href="edit_artist_view" class="dropbtn" style="width:206px;">Edit Profile</a>
                             <a href="logout_artist" class="dropbtn" style="width:206px;">My Gallery</a>
                             <a href="logout_artist" class="dropbtn" style="width:206px;">Log out</a>
                         </div>
@@ -67,6 +67,9 @@
                     <?php endif; ?>
                     <?php if($this->session->flashdata('logout_user_success')) : ?>
                         <?php echo '<p class="alert alert-success"  id="nav">'.$this->session->flashdata('logout_user_success').'</p>'; ?>
+                    <?php endif; ?>
+                    <?php if($this->session->flashdata('edit_profile_success')) : ?>
+                        <?php echo '<p class="alert alert-success"  id="nav">'.$this->session->flashdata('edit_profile_success').'</p>'; ?>
                     <?php endif; ?>
                     <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/style-header.css">
                     <style>

@@ -21,7 +21,7 @@
             <p>
                 <label for="Bio" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center; padding: 50px ">Caption Photo</label>
                 <p>
-                <input type="text" style="height:200px; weight: 200px;" name="tuliskan sesuatu" /></p>
+                <textarea type="textarea" style="resize:none;background-color:#e3e3e3;border:1px solid #ccc;margin-left:55px;border-radius:15px;padding: 10px 10px 10px 10px; " rows="10" cols="56" name="tuliskan sesuatu" ></textarea></p>
 
             <tr>
                 <td><label for="genre" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center; padding: 50px ">Genre</label><td>

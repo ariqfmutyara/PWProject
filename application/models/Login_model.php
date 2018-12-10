@@ -21,6 +21,15 @@
 			$result = $this->db->get('users');
 			return $result->row_array();
 		}
+
+		public function edit_artist($pp, $bio)
+		{
+			$this->db->where('pp', $pp);
+			$this->db->where('bio', $bio);
+
+			$result = $this->db->get('users');
+			return $result->row_array();
+		}
 	}
 ?>
 
