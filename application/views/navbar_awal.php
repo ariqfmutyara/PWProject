@@ -46,7 +46,7 @@
                 <li class="dropdown">
                     <a class="dropbtn" style=""><?php echo $this->session->userdata('username_user'); ?></a>
                         <div class="dropdown-content">
-                            <a href="edit_artist_view" class="dropbtn" style="width:206px;">Edit Profile</a>
+                            <a href="edit_artist" class="dropbtn" style="width:206px;">Edit Profile</a>
                             <a href="logout_artist" class="dropbtn" style="width:206px;">My Gallery</a>
                             <a href="logout_artist" class="dropbtn" style="width:206px;">Log out</a>
                         </div>

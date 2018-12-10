@@ -66,7 +66,6 @@ $route['home_artist'] = 'Home_artist';
 
 $route['footer_aboutus'] = 'About_Us';
 $route['edit_artist'] = 'Login/edit_artist';
-$route['edit_artist_view'] = 'Login/edit_artist_view';
 $route['uploadfoto'] = 'Upload_foto';
 
 $route['register'] = 'Register';

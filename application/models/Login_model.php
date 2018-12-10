@@ -24,11 +24,13 @@
 
 		public function edit_artist($pp, $bio)
 		{
-			$this->db->where('pp', $pp);
-			$this->db->where('bio', $bio);
-
-			$result = $this->db->get('users');
-			return $result->row_array();
+			$data =  array(
+				'pp' => $pp,
+				'bio' => $bio
+			);
+			$user = $this->session->userdata('username_user');
+			$this->db->where('username_user', $user);
+			return $this->db->update('users', $data);
 		}
 	}
 ?>
