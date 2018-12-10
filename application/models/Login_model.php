@@ -10,10 +10,7 @@
 			$this->db->where('pw_voter', $password);
 
 			$result = $this->db->get('voters');
-			if($result->num_rows() == 1)
-				return $result->row(0)->id_voters;
-			else
-				return false;
+			return $result->row_array();
 		}
 
 		public function login_user($username, $password)
@@ -22,10 +19,7 @@
 			$this->db->where('pw_user', $password);
 
 			$result = $this->db->get('users');
-			if($result->num_rows() == 1)
-				return $result->row(0)->id;
-			else
-				return false;
+			return $result->row_array();
 		}
 	}
 ?>
