@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 08, 2018 at 12:02 PM
--- Server version: 10.1.35-MariaDB
--- PHP Version: 7.2.9
+-- Generation Time: Dec 10, 2018 at 06:00 AM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 5.6.38
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -36,6 +36,20 @@ CREATE TABLE `admin` (
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `post`
+--
+
+CREATE TABLE `post` (
+  `image` varchar(255) NOT NULL,
+  `id` int(11) NOT NULL,
+  `nama` varchar(255) NOT NULL,
+  `caption` varchar(255) NOT NULL,
+  `genre` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
 -- Table structure for table `users`
 --
 
@@ -45,6 +59,8 @@ CREATE TABLE `users` (
   `email_user` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `pw_user` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `name_user` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `pp` varchar(11) COLLATE utf8_unicode_ci NOT NULL,
+  `bio` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
   `register_date_user` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
@@ -52,8 +68,8 @@ CREATE TABLE `users` (
 -- Dumping data for table `users`
 --
 
-INSERT INTO `users` (`id`, `username_user`, `email_user`, `pw_user`, `name_user`, `register_date_user`) VALUES
-(1, 'ariqfmutyara', 'ariqmutyara@gmail.com', '5d5b321b8059be9389488598f51a03b4', 'Muhammad Ariq Farhansyah Mutyara', '2018-12-08 10:45:42');
+INSERT INTO `users` (`id`, `username_user`, `email_user`, `pw_user`, `name_user`, `pp`, `bio`, `register_date_user`) VALUES
+(1, 'ariqfmutyara', 'ariqmutyara@gmail.com', '5d5b321b8059be9389488598f51a03b4', 'Muhammad Ariq Farhansyah Mutyara', '0', '', '2018-12-08 10:45:42');
 
 -- --------------------------------------------------------
 
@@ -82,6 +98,12 @@ INSERT INTO `voters` (`id_voters`, `username_voter`, `email_voter`, `pw_voter`, 
 --
 
 --
+-- Indexes for table `post`
+--
+ALTER TABLE `post`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `users`
 --
 ALTER TABLE `users`
@@ -96,6 +118,12 @@ ALTER TABLE `voters`
 --
 -- AUTO_INCREMENT for dumped tables
 --
+
+--
+-- AUTO_INCREMENT for table `post`
+--
+ALTER TABLE `post`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 
 --
 -- AUTO_INCREMENT for table `users`
