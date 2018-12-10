@@ -15,6 +15,7 @@
             <label for="avatar" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center; padding: 50px">Choose Photo</b></label>
             <p>
                 <input type="file" id="avatar" name="fileupload" style="padding: 50px" accept="image/png, image/jpeg">
+                
                 <!--<label for="fileupload"> Select a file to upload</label>-->
             </p>
             <p>
@@ -25,7 +26,7 @@
             <p>
                 <label for="Bio" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center; padding: 50px ">About You</label>
                 <p>
-                <input type="text" style="height:200px; weight: 200px;" name="tuliskan sesuatu" /></p>
+                <textarea type="textarea" style="resize:none;background-color:#e3e3e3;border:1px solid #ccc;margin-left:55px;border-radius:15px;padding: 10px 10px 10px 10px; " rows="15" cols="56" name="tuliskan sesuatu" ></textarea></p>
             <!--<form method ="get" action="<?php echo base_url("/register_voter")?>">-->
                 <button type="submit" style="border-radius: 0px; margin-top:20px;margin-left: 150px;color: #252525; background-color: #ececec ">Done</button>
 
