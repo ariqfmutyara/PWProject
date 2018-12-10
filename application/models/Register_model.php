@@ -28,7 +28,7 @@
 		public function check_username_voters($username) 
 		{
 			$query = $this->db->get_where('voters', array('username_voter => $username'));
-			if(empty($query->row_array()))
+			if($query->num_rows() > 0)
 				return true;
 			else
 				return false;
@@ -37,7 +37,7 @@
 		public function check_username_users($username) 
 		{
 			$query = $this->db->get_where('users', array('username_user => $username'));
-			if(empty($query->row_array()))
+			if($query->num_rows() > 0)
 				return true;
 			else
 				return false;
@@ -46,7 +46,7 @@
 		public function check_email_voters($email) 
 		{
 			$query = $this->db->get_where('voters', array('email_voter => $email'));
-			if(empty($query->row_array()))
+			if($query->num_rows() > 0)
 				return true;
 			else
 				return false;
@@ -55,7 +55,7 @@
 		public function check_email_users($email) 
 		{
 			$query = $this->db->get_where('users', array('email_user => $email'));
-			if(empty($query->row_array()))
+			if($query->num_rows() > 0)
 				return true;
 			else
 				return false;
