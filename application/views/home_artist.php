@@ -8,7 +8,9 @@
   <meta name="description" content="">
   
   <title>Welcome to VOTART</title>
-  <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/home_artist.css">
+  <style>
+    
+  </style>
 </head>
 <body>
 <!--Navbar

@@ -43,9 +43,9 @@ h3 {
   border: 0px solid #ececec;
   border-radius: 10px 10px 0px 0px;
   margin-top: -80px;
-  margin-left: 440px;
-  min-height: 420px;
-  width: 34%;
+  margin-left: 380px;
+  min-height: 430px;
+  width: 38%;
 }
 
 .header-one{

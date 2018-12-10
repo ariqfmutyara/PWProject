@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <title>Vote Art</title>
-    <style>
+<style>
     body{
     margin:0px;
     padding: 0px;
@@ -20,9 +20,9 @@ div form{
 
 h1{
     font-family: montserrat;
-    font-size: 40px;
+    font-size: 35px;
     text-align: center; 
-    padding-top: 20px; 
+    padding-top: 10px; 
     color: #694b89;
     transition: 0.3s;
     cursor: pointer;
@@ -78,8 +78,8 @@ ul li.content{
 
 
 .square1{
-    height: 600px;
-    width: 600px;
+    height: 550px;
+    width: 550px;
     background-color: white;
     float: right;
     background-position: center center;
@@ -151,7 +151,7 @@ input[type=text], input[type=password] {
     height: 25px;
     width: 25px;
     background-color: #eee;
-    margin-left: 60px;
+    margin-left: 40px;
     margin-top: -5px;
 }
 .cekbox input:checked ~ .checkmark {
