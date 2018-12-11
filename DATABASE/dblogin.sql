@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Dec 10, 2018 at 06:00 AM
--- Server version: 10.1.36-MariaDB
--- PHP Version: 5.6.38
+-- Generation Time: Dec 11, 2018 at 10:04 PM
+-- Server version: 10.1.35-MariaDB
+-- PHP Version: 7.2.9
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -36,16 +36,23 @@ CREATE TABLE `admin` (
 -- --------------------------------------------------------
 
 --
--- Table structure for table `post`
+-- Table structure for table `posts`
 --
 
-CREATE TABLE `post` (
-  `image` varchar(255) NOT NULL,
+CREATE TABLE `posts` (
+  `image` varchar(255) COLLATE utf8_unicode_ci NOT NULL DEFAULT '',
   `id` int(11) NOT NULL,
-  `nama` varchar(255) NOT NULL,
-  `caption` varchar(255) NOT NULL,
-  `genre` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+  `caption` varchar(255) COLLATE utf8_unicode_ci NOT NULL,
+  `genre` varchar(255) COLLATE utf8_unicode_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `posts`
+--
+
+INSERT INTO `posts` (`image`, `id`, `caption`, `genre`) VALUES
+('nature2.jpg', 7, 'Hello', 'P'),
+('nature2.jpg', 8, 'fuck', 'P');
 
 -- --------------------------------------------------------
 
@@ -69,7 +76,8 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id`, `username_user`, `email_user`, `pw_user`, `name_user`, `pp`, `bio`, `register_date_user`) VALUES
-(1, 'ariqfmutyara', 'ariqmutyara@gmail.com', '5d5b321b8059be9389488598f51a03b4', 'Muhammad Ariq Farhansyah Mutyara', '0', '', '2018-12-08 10:45:42');
+(1, 'ariqfmutyara', 'ariqmutyara@gmail.com', '5d5b321b8059be9389488598f51a03b4', 'Muhammad Ariq Farhansyah Mutyara', 'fotografi2j', 'Hello', '2018-12-08 10:45:42'),
+(3, 'ariqmutyara', 'ariqff@gmail.com', '5d5b321b8059be9389488598f51a03b4', 'Ariq', '', '', '2018-12-10 12:57:25');
 
 -- --------------------------------------------------------
 
@@ -98,9 +106,9 @@ INSERT INTO `voters` (`id_voters`, `username_voter`, `email_voter`, `pw_voter`, 
 --
 
 --
--- Indexes for table `post`
+-- Indexes for table `posts`
 --
-ALTER TABLE `post`
+ALTER TABLE `posts`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -120,16 +128,16 @@ ALTER TABLE `voters`
 --
 
 --
--- AUTO_INCREMENT for table `post`
+-- AUTO_INCREMENT for table `posts`
 --
-ALTER TABLE `post`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+ALTER TABLE `posts`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 
 --
 -- AUTO_INCREMENT for table `users`
 --
 ALTER TABLE `users`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=4;
 
 --
 -- AUTO_INCREMENT for table `voters`
