@@ -52,7 +52,7 @@
                         </div>
                  </li>
                  <li>
-                    <a class="dropbtn" href="<?php echo base_url()?>uploadfoto">Upload</a>
+                    <a class="dropbtn" href="create">Upload</a>
                 </li>
                 <?php endif; ?>
                 <li style="margin-right: 40px;">

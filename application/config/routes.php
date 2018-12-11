@@ -66,7 +66,7 @@ $route['home_artist'] = 'Home_artist';
 
 $route['footer_aboutus'] = 'About_Us';
 $route['edit_artist'] = 'Login/edit_artist';
-$route['uploadfoto'] = 'Upload_foto';
+$route['create'] = 'Posts/create';
 
 $route['register'] = 'Register';
 $route['404_override'] = '';

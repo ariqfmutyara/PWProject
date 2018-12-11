@@ -78,15 +78,30 @@ class Login extends CI_Controller {
 	public function edit_artist() 
 	{
 
+
 		$data['title'] = 'Edit Artist';
 
-		$this->form_validation->set_rules('pp', 'Upload Profile Picture', 'required');
 		$this->form_validation->set_rules('bio', 'Add Bio', 'required');
 		if($this->form_validation->run() == FALSE)
 			$this->load->view('edit_artist', $data);
 		else {
-			$pp = $this->input->post('pp');
-			$bio = $this->input->post('bio');
+				$config['upload_path'] = './assets/foto/users';
+				$config['allowed_types'] = 'jpg|png';
+				$config['max_size'] = '4096';
+				$config['max_width'] = '1200';
+				$config['max_height'] = '1200';
+
+				$this->load->library('upload', $config);
+
+				if(!$this->upload->do_upload()) {
+					$error = array('error' => $this->upload->display_errors());
+					$pp =  'noimage.jpg';
+				}
+				else {
+					$data = array('upload_data' => $this->upload->data());
+					$pp = $_FILES['userfile']['name'];
+				}
+				$bio = $this->input->post('bio');
 
 			$user = $this->login_model->edit_artist($pp, $bio);
 

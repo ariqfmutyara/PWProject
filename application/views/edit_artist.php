@@ -17,10 +17,10 @@
                 $this->load->library('form_validation');
                 $this->load->helper(array('form'));
             ?>
-            <?php echo form_open('edit_artist'); ?>
+            <?php echo form_open_multipart('edit_artist'); ?>
             <div class="container">
             <label for="pp" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center; padding: 50px">Choose Photo</b></label>
-                <input type="file" id="pp" name="pp" style="padding: 50px" accept="image/png, image/jpeg">
+                <input type="file" id="pp" name="userfile" style="padding: 50px" accept="image.png, image.jpeg">
                 <!--<label for="fileupload"> Select a file to upload</label>-->
                 <label for="Nama" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center; padding: 50px ">Name</b> </label>
                 <input type="text" placeholder="Nama" name="Nama" required />
