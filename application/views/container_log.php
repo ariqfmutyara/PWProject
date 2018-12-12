@@ -1,6 +1,21 @@
 
   <!-- isinya container kalo udah login, baik itu voters atau artist (EXPLORE)
   ================================================== -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+  <!-- Font Icons CSS
+   ================================================== -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <!-- Main CSS
+   ================================================== -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google web font 
+   ================================================== --> 
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+
   <style>
     .explore1{
       font-family: montserrat;
@@ -63,31 +78,19 @@
          <li class="konten"><a href="a">Art</a></li>
       </ul>
       <br>
-      <div style=" margin-left: 40px;">
-        <table>
-          <br><br><br>
-        <thead>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-          <th></th>
-        </thead>
-        <tbody>
-          
-          <tr>
-            <?php foreach ($image as $foto) : ?>
+      <div class="iso-box photoshop branding col-md-4 col-sm-6" style="margin-left: 30px;margin-top:50px;">
+        <?php foreach ($image as $foto) : ?>
             <td><img class="lelah" src="<?php echo base_url();?>assets/foto/posts/<?php echo $foto['image']; ?>"></td>
             <?php endforeach; ?>
-          </tr>
-        
 
-          
-        </tbody>
-          
-        </table>
-        
-      </div>          
-</div>
+      </div>
+
 </body>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
 </html>
