@@ -9,8 +9,8 @@
         <div class="square1">
             <!--<form class="modal-content animate" action="controllers/Home.php">-->
             <?php
-                        $this->load->library('form_validation');
-                        $this->load->helper(array('form'));
+                    $this->load->library('form_validation');
+                    $this->load->helper(array('form'));
                 ?>
                 <?php echo validation_errors(); ?>
                 <?php echo form_open_multipart('create'); ?>
@@ -32,11 +32,11 @@
             <tr>
                 <td><label for="genre" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center; padding: 50px ">Genre</label><td>
                 <p></p>
-                <td><label><input type="radio" name="genre" value="L">Fashion</label></td> 
-                <td><label><input type="radio" name="genre" value="P">Photography</label></td>
-                <td><label><input type="radio" name="genre" value="P">Nature</label></td>
-                <td><label><input type="radio" name="genre" value="P">Digital</label></td>
-                <td><label><input type="radio" name="genre" value="P">Art</label></td>
+                <td><label><input type="radio" name="genre" value="Fashion">Fashion</label></td> 
+                <td><label><input type="radio" name="genre" value="Photography">Photography</label></td>
+                <td><label><input type="radio" name="genre" value="Nature">Nature</label></td>
+                <td><label><input type="radio" name="genre" value="Digital">Digital</label></td>
+                <td><label><input type="radio" name="genre" value="Art">Art</label></td>
                 
             </tr>
                 <button type="submit" style="border-radius: 0px; margin-top:30px;margin-left: 150px;color: #252525; background-color: #ececec ">Done</button>
