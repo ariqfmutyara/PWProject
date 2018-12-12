@@ -3,7 +3,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 	class Posts extends CI_Controller {
 		public function _construct() {
 		parent::_construct();
-		$this->load->model('register_model');
+		$this->load->model('posts_model');
 		$this->load->library('session');
 		$this->load->helper(array('form'));
 		$this->load->library('form_validation');
@@ -37,7 +37,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					$this->session->set_flashdata('create', 'Data Successfully Uploaded');
 				}
 				$this->posts_model->create($image); 
-					redirect('home', $data);
+					redirect('home');
 		}
 	}
 }

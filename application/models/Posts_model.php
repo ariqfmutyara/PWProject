@@ -11,5 +11,11 @@
 			);
 			return $this->db->insert('posts', $data);
 		}
+		public function get_image() {
+			$this->db->select('image');
+			$this->db->from('posts');
+			$result = $this->db->get();
+			return $result->result_array();
+		}
 
 	}

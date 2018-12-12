@@ -73,34 +73,15 @@
           <th></th>
           <th></th>
         </thead>
-        <tbody> 
-        <?php $this->load->database(); ?>
-        <?php $result = $this->db->get('posts'); ?>
+        <tbody>
+          
+          <tr>
+            <?php foreach ($image as $foto) : ?>
+            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/posts/<?php echo $foto['image']; ?>"></td>
+            <?php endforeach; ?>
+          </tr>
+        
 
-
-<!-- jadi intinya, batas 1 baris itu 5 foto. kalo ada 6 foto nanti dia bakal ada di baris selanjutnya. mangat riq aing gangerti :(-->
-          <tr>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-          </tr>
-          <tr>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            
-          </tr>
-          <tr>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/portfolio-img6.jpg"></td>
-          </tr>
           
         </tbody>
           
