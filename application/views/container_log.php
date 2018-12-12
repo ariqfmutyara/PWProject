@@ -80,7 +80,7 @@
       <br>
       <div class="iso-box photoshop branding col-md-4 col-sm-6" style="margin-left: 30px;margin-top:50px;">
         <?php foreach ($image as $foto) : ?>
-            <td><img class="lelah" src="<?php echo base_url();?>assets/foto/posts/<?php echo $foto['image']; ?>"></td>
+            <td><a href="#"><img class="lelah" src="<?php echo base_url();?>assets/foto/posts/<?php echo $foto['image']; ?>"></a></td>
             <?php endforeach; ?>
 
       </div>
