@@ -39,6 +39,9 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 				$this->posts_model->create($image); 
 					redirect('home');
 		}
+		public function delete($id) {
+			$this->posts_model->delete($id);
+		}
 	}
 }
 ?>

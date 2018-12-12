@@ -17,5 +17,13 @@
 			$result = $this->db->get();
 			return $result->result_array();
 		}
+		public function delete($id) {
+			$this->db->where('id',$id);
+			$this->db->delete('posts');
+			return true;
+		}
+		public function update() {
+			
+		}
 
 	}
