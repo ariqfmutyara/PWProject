@@ -69,6 +69,8 @@ $route['edit_artist'] = 'Login/edit_artist';
 $route['create'] = 'Posts/create';
 $route['delete'] = 'Posts/delete';
 $route['update'] = 'Posts/update';
+$route['edit'] = 'Posts/edit';
+
 
 $route['register'] = 'Register';
 $route['404_override'] = '';
