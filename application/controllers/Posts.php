@@ -17,7 +17,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 
 			if($this->form_validation->run() == FALSE) 
 				$this->load->view('upload_foto', $data);
-			else {
+			else {	
 				$config['upload_path'] = './assets/foto/posts';
 				$config['allowed_types'] = 'jpg|png';
 				$config['max_size'] = '4096';
@@ -40,16 +40,5 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					redirect('home');
 		}
 	}
-		public function edit() {
-			$this->load->view('edit_post');
-		}
-		public function delete($image) {
-			$this->posts_model->delete($image);
-			redirect('home');
-		}
-		public function update() {
-			$this->posts_model->update();
-			redirect('home');
-		}
 }
 ?>

@@ -100,15 +100,7 @@
         
       </div>          
 </div>
-      <div class="iso-box photoshop branding col-md-4 col-sm-6" style="margin-left: 30px;margin-top:50px;">
-        <?php foreach ($image as $foto) : ?>
-            <td><a href="edit" ><img class="lelah" src="<?php echo base_url();?>assets/foto/posts/<?php echo $foto['image']; ?>"></a></td>
-            <?php endforeach; ?>
-
-      </div>
-
 </body>
-
 <script src="js/jquery.js"></script>
 <script src="js/bootstrap.min.js"></script>
 <script src="js/isotope.js"></script>
