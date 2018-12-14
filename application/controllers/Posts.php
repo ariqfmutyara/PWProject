@@ -40,5 +40,16 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 					redirect('home');
 		}
 	}
+		public function edit() {
+			$this->load->view('edit_post');
+		}
+		public function delete($image) {
+			$this->posts_model->delete($image);
+			redirect('home');
+		}
+		public function update() {
+			$this->posts_model->update();
+			redirect('home');
+		}
 }
 ?>

@@ -1,6 +1,21 @@
 
   <!-- isinya container kalo udah login, baik itu voters atau artist (EXPLORE)
   ================================================== -->
+    <link rel="stylesheet" href="css/animate.min.css">
+
+  <!-- Font Icons CSS
+   ================================================== -->
+  <link rel="stylesheet" href="css/font-awesome.min.css">
+  <link rel="stylesheet" href="css/ionicons.min.css">
+
+  <!-- Main CSS
+   ================================================== -->
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Google web font 
+   ================================================== --> 
+  <link href='https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700,300' rel='stylesheet' type='text/css'>
+
   <style>
     .explore1{
       font-family: montserrat;
@@ -85,5 +100,19 @@
         
       </div>          
 </div>
+      <div class="iso-box photoshop branding col-md-4 col-sm-6" style="margin-left: 30px;margin-top:50px;">
+        <?php foreach ($image as $foto) : ?>
+            <td><a href="edit" ><img class="lelah" src="<?php echo base_url();?>assets/foto/posts/<?php echo $foto['image']; ?>"></a></td>
+            <?php endforeach; ?>
+
+      </div>
+
 </body>
+
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/isotope.js"></script>
+<script src="js/imagesloaded.min.js"></script>
+<script src="js/wow.min.js"></script>
+<script src="js/custom.js"></script>
 </html>
