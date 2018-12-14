@@ -20,5 +20,20 @@
 			);
 			return $this->db->insert('posts', $data);
 		}
+		public function delete($id) {
+			$this->db->where('id', $id);
+			$this->db->delete('posts');
+			return true;
+		}
+		public function update() {
+			$data =  array(
+				'image' => $image,
+				'caption' => $this->input->post('caption'),
+				'genre' => $this->input->post('genre')
+			);
+			$this->db->where('id', $this->input->post('id'));
+			return $this->db->update('posts', $data);
+
+		}
 	}
 ?>

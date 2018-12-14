@@ -70,9 +70,9 @@ $route['home_artist'] = 'Home_artist';
 $route['footer_aboutus'] = 'About_Us';
 $route['edit_artist'] = 'Login/edit_artist';
 $route['create'] = 'Posts/create';
-$route['delete'] = 'Posts/delete';
-$route['update'] = 'Posts/update';
-$route['edit'] = 'Posts/edit';
+$route['delete/(:any)'] = 'Posts/delete/$1';
+$route['update/(:any)'] = 'Posts/update/$1';
+$route['edit/(:any)'] = 'Posts/edit/$1';
 
 
 $route['register'] = 'Register';
