@@ -3,6 +3,15 @@
 		public function _construct() {
 			$this->load->database();
 		}
+		public function get_posts($id = FALSE) {
+			if($id === FALSE) {
+				$query = $this->db->get('posts');
+				return $query->result_array();
+			}
+			
+			$query = $this->db->get_where('posts', array('id' => $id));
+			return $query->row_array();
+		}
 		public function create($image) {
 			$data =  array(
 				'image' => $image,
@@ -11,11 +20,6 @@
 			);
 			return $this->db->insert('posts', $data);
 		}
-		public function get_image() {
-			$this->db->select('image');
-			$this->db->from('posts');
-			$result = $this->db->get();
-			return $result->result_array();
-		}
+		
 
 	}
