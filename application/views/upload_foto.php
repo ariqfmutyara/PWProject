@@ -31,13 +31,11 @@
 
             <tr>
                 <td><label for="genre" style="color: #694b89; font-family: montserrat; font-size: 20px;text-align: center; padding: 50px ">Genre</label><td>
-                <p></p>
-                <td><label><input type="radio" name="genre" value="Fashion">Fashion</label></td> 
-                <td><label><input type="radio" name="genre" value="Photography">Photography</label></td>
-                <td><label><input type="radio" name="genre" value="Nature">Nature</label></td>
-                <td><label><input type="radio" name="genre" value="Digital">Digital</label></td>
-                <td><label><input type="radio" name="genre" value="Art">Art</label></td>
-                
+                <select name = "genre_id">
+                    <?php foreach ($genre as $genres) : ?>
+                        <option value="<?php echo $genres['id']; ?>"><?php echo $genres['name']; ?></option>
+                    <?php endforeach; ?>
+                </select>
             </tr>
                 <button type="submit" style="border-radius: 0px; margin-top:30px;margin-left: 150px;color: #252525; background-color: #ececec ">Done</button>
         </div>

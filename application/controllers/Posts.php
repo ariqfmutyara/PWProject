@@ -9,35 +9,37 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$this->load->library('form_validation');
 		}
 
-		public function create() {
-			$data['title'] = 'Create';
+	public function create() {
+		$data['title'] = 'Create';
 
-			$this->form_validation->set_rules('caption', 'Write your caption', 'required');
-			$this->form_validation->set_rules('genre', 'Select Genre', 'required');
+		$data['genre'] = $this->posts_model->get_genre();
 
-			if($this->form_validation->run() == FALSE) 
-				$this->load->view('upload_foto', $data);
-			else {	
-				$config['upload_path'] = './assets/foto/posts';
-				$config['allowed_types'] = 'jpg|png';
-				$config['max_size'] = '4096';
-				$config['max_width'] = '1200';
-				$config['max_height'] = '1200';
+		$this->form_validation->set_rules('caption', 'Write your caption', 'required');
+		$this->form_validation->set_rules('genre', 'Select Genre', 'required');
 
-				$this->load->library('upload', $config);
+		if($this->form_validation->run() == FALSE) 
+			$this->load->view('upload_foto', $data);
+		else {	
+			$config['upload_path'] = './assets/foto/posts';
+			$config['allowed_types'] = 'jpg|png';
+			$config['max_size'] = '4096';
+			$config['max_width'] = '1200';
+			$config['max_height'] = '1200';
 
-				if(!$this->upload->do_upload()) {
-					$error = array('error' => $this->upload->display_errors());
-					$image =  'noimage.jpg';
-					redirect('create');
-				}
-				else {
-					$data = array('upload_data' => $this->upload->data());
-					$image = $_FILES['userfile']['name'];
-					$this->session->set_flashdata('create', 'Data Successfully Uploaded');
-				}
-				$this->posts_model->create($image); 
-					redirect('home');
+			$this->load->library('upload', $config);
+
+			if(!$this->upload->do_upload()) {
+				$error = array('error' => $this->upload->display_errors());
+				$image =  'noimage.jpg';
+				redirect('create');
+			}
+			else {
+				$data = array('upload_data' => $this->upload->data());
+				$image = $_FILES['userfile']['name'];
+				$this->session->set_flashdata('create', 'Data Successfully Uploaded');
+			}
+			$this->posts_model->create($image); 
+			redirect('home');
 		}
 	}
 	public function delete($id) {

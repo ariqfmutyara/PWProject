@@ -5,6 +5,7 @@
 		}
 		public function get_posts($id = FALSE) {
 			if($id === FALSE) {
+				$this->db->join('genre', 'genre.id = posts.genre_id');
 				$query = $this->db->get('posts');
 				return $query->result_array();
 			}
@@ -12,11 +13,18 @@
 			$query = $this->db->get_where('posts', array('id' => $id));
 			return $query->row_array();
 		}
+
+		public function get_genre() {
+			$this->db->order_by('id');
+			$query =  $this->db->get('genre');
+			return $query->result_array();
+
+		}
 		public function create($image) {
 			$data =  array(
 				'image' => $image,
 				'caption' => $this->input->post('caption'),
-				'genre' => $this->input->post('genre')
+				'genre' => $this->input->post('genre_id')
 			);
 			return $this->db->insert('posts', $data);
 		}
@@ -29,7 +37,7 @@
 			$data =  array(
 				'image' => $image,
 				'caption' => $this->input->post('caption'),
-				'genre' => $this->input->post('genre')
+				'genre' => $this->input->post('genre_id')
 			);
 			$this->db->where('id', $this->input->post('id'));
 			return $this->db->update('posts', $data);
