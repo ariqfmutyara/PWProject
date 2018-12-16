@@ -30,9 +30,10 @@
 						</div>
 							<div class="konten-grid2">
 								<div class="like-button" >ini like button</div>
-								<div class="like-button" >ini edit button</div>
-								<div class="like-button" >ini hapus button</div>
-									
+								<?php if($this->session->userdata('user') == $posts['user_id']): ?>
+									<div class="like-button" >ini edit button</div>
+									<div class="like-button" >ini hapus button</div>
+								<?php endif; ?>
 								</div>
 						</div>
 					</div>

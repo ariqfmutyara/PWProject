@@ -53,8 +53,6 @@ $route['default_controller'] = 'Home/index';
 $route['home'] = 'Home/index/';
 $route['home/(:any)'] = 'Home/posts/$1';
 
-
-
 $route['login_voter'] = 'Login/login_voter';
 $route['login_artist'] = 'Login/login_artist';
 

@@ -71,6 +71,9 @@
                     <?php if($this->session->flashdata('edit_profile_success')) : ?>
                         <?php echo '<p class="alert alert-success"  id="nav">'.$this->session->flashdata('edit_profile_success').'</p>'; ?>
                     <?php endif; ?>
+                    <?php if($this->session->flashdata('create')) : ?>
+                        <?php echo '<p class="alert alert-success"  id="nav">'.$this->session->flashdata('create').'</p>'; ?>
+                    <?php endif; ?>
                     <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/style-header.css">
                     <style>
                         #nav{

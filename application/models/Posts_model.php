@@ -22,9 +22,10 @@
 		}
 		public function create($image) {
 			$data =  array(
+				'genre_id' => $this->input->post('genre_id'),
+				'user_id' => $this->session->userdata('user'),
 				'image' => $image,
-				'caption' => $this->input->post('caption'),
-				'genre' => $this->input->post('genre_id')
+				'caption' => $this->input->post('caption')
 			);
 			return $this->db->insert('posts', $data);
 		}

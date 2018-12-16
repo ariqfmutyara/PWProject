@@ -10,12 +10,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 
 	public function create() {
+		if(!$this->session->userdata('logged_in_user'))
+			redirect('login_artist');
 		$data['title'] = 'Create';
 
 		$data['genre'] = $this->posts_model->get_genre();
 
 		$this->form_validation->set_rules('caption', 'Write your caption', 'required');
-		$this->form_validation->set_rules('genre', 'Select Genre', 'required');
+		$this->form_validation->set_rules('genre_id', 'Select Genre', 'required');
 
 		if($this->form_validation->run() == FALSE) 
 			$this->load->view('upload_foto', $data);
@@ -43,10 +45,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		}
 	}
 	public function delete($id) {
+		if(!$this->session->userdata('logged_in_user'))
+			redirect('login_artist');
 		$this->posts_model->delete($id);
 		redirect('home');
 	}
 	public function edit($id) {
+		if(!$this->session->userdata('logged_in_user'))
+			redirect('login_artist');
 		$data['posts'] = $this->posts_model->get_posts($id);
 
 		if(empty($data['posts'])) 
@@ -55,6 +61,8 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		$this->load->view('edit_post', $data);
 	}
 	public function update() {
+		if(!$this->session->userdata('logged_in_user'))
+			redirect('login_artist');
 		$this->posts_model->update();
 		redirect('home');
 	}
