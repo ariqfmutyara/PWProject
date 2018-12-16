@@ -74,6 +74,12 @@
                     <?php if($this->session->flashdata('create')) : ?>
                         <?php echo '<p class="alert alert-success"  id="nav">'.$this->session->flashdata('create').'</p>'; ?>
                     <?php endif; ?>
+                    <?php if($this->session->flashdata('delete')) : ?>
+                        <?php echo '<p class="alert alert-success"  id="nav">'.$this->session->flashdata('delete').'</p>'; ?>
+                    <?php endif; ?>
+                    <?php if($this->session->flashdata('update')) : ?>
+                        <?php echo '<p class="alert alert-success"  id="nav">'.$this->session->flashdata('update').'</p>'; ?>
+                    <?php endif; ?>
                     <link rel="stylesheet" href="<?php echo base_url();?>assets/CSS/style-header.css">
                     <style>
                         #nav{

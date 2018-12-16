@@ -30,19 +30,25 @@
 			return $this->db->insert('posts', $data);
 		}
 		public function delete($id) {
+			$image_file_name = $this->db->select('image')->get_where('posts', array('id' => $id))->row()->image;
+			$cwd = getcwd(); // save the current working directory
+			$image_file_path = $cwd."\\assets\\foto\\posts\\";
+			chdir($image_file_path);
+			unlink($image_file_name);
+			chdir($cwd); // Restore the previous working directory
 			$this->db->where('id', $id);
 			$this->db->delete('posts');
 			return true;
 		}
 		public function update() {
 			$data =  array(
+				'genre_id' => $this->input->post('genre_id'),
+				'user_id' => $this->session->userdata('user'),
 				'image' => $image,
-				'caption' => $this->input->post('caption'),
-				'genre' => $this->input->post('genre_id')
+				'caption' => $this->input->post('caption')
 			);
 			$this->db->where('id', $this->input->post('id'));
 			return $this->db->update('posts', $data);
-
 		}
 	}
 ?>

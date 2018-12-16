@@ -48,12 +48,14 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		if(!$this->session->userdata('logged_in_user'))
 			redirect('login_artist');
 		$this->posts_model->delete($id);
+		$this->session->set_flashdata('delete', 'Data Successfully Deleted');
 		redirect('home');
 	}
 	public function edit($id) {
 		if(!$this->session->userdata('logged_in_user'))
 			redirect('login_artist');
 		$data['posts'] = $this->posts_model->get_posts($id);
+		$data['genre'] = $this->posts_model->get_genre();
 
 		if(empty($data['posts'])) 
 			show_404();
@@ -64,6 +66,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 		if(!$this->session->userdata('logged_in_user'))
 			redirect('login_artist');
 		$this->posts_model->update();
+		$this->session->set_flashdata('update', 'Data Successfully Updated');
 		redirect('home');
 	}
 }

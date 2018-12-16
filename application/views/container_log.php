@@ -91,6 +91,7 @@
         <tbody>      
           <tr>
             <?php foreach ($posts as $foto) : ?>
+            <input type="hidden" name="id" value="<?php echo $foto['id']; ?>">
             <td><a href="<?php echo site_url('home/'.$foto['id']); ?>"><img class="lelah" src="<?php echo base_url();?>assets/foto/posts/<?php echo $foto['image']; ?>"></a></td>
             <?php endforeach; ?>
           </tr>

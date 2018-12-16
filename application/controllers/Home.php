@@ -18,6 +18,8 @@ class Home extends CI_Controller {
 	}
 
 	public function posts($id = NULL) {
+		$this->load->model('posts_model');
+		$id = $this->input->post('id');
 		$data['posts'] = $this->posts_model->get_posts($id);
 
 		if(empty($data['posts'])) 
